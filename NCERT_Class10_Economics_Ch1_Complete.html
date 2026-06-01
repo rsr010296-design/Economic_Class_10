@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 10 Economics | Chapter 1: Development | Complete Study Material</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg-primary:#ffffff;--bg-secondary:#f5f5f3;--bg-tertiary:#eeede8;
+  --bg-info:#e6f1fb;--bg-success:#eaf3de;--bg-warning:#faeeda;--bg-danger:#fcebeb;
+  --text-primary:#1a1a18;--text-secondary:#5f5e5a;
+  --text-success:#27500A;--text-danger:#791F1F;--text-info:#0C447C;--text-warning:#633806;
+  --border:rgba(0,0,0,0.12);--border-md:rgba(0,0,0,0.22);
+  --r-md:8px;--r-lg:12px;--r-xl:16px;
+  --green:#0f6e56;--blue:#185FA5;--amber:#BA7517;--red:#993C1D;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg-primary:#1e1e1c;--bg-secondary:#2a2a28;--bg-tertiary:#252523;
+    --bg-info:#0c2a44;--bg-success:#162808;--bg-warning:#2e1c04;--bg-danger:#2c0f0f;
+    --text-primary:#e8e7e2;--text-secondary:#a0a09a;
+    --text-success:#C0DD97;--text-danger:#F09595;--text-info:#85B7EB;--text-warning:#FAC775;
+    --border:rgba(255,255,255,0.1);--border-md:rgba(255,255,255,0.2);
+    --green:#5DCAA5;--blue:#85B7EB;--amber:#EF9F27;--red:#F0997B;
+  }
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg-tertiary);color:var(--text-primary);min-height:100vh;padding:2rem 1rem}
+.wrap{max-width:820px;margin:0 auto}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1a4a6b 0%,#0e6e56 100%);padding:2.5rem 2rem 2rem;border-radius:var(--r-xl);margin-bottom:1.5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.05)}
+.hero::after{content:'';position:absolute;bottom:-60px;left:20%;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,0.04)}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.15);color:#fff;font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:.75rem;letter-spacing:.8px;text-transform:uppercase}
+.hero h1{font-size:28px;font-weight:600;color:#fff;line-height:1.2;margin-bottom:.5rem}
+.hero p{color:rgba(255,255,255,0.75);font-size:13px}
+.hero-stats{display:flex;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
+.hero-stat{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,0.85);font-size:12px}
+
+/* MAIN TABS */
+.tab-bar{display:flex;gap:4px;background:var(--bg-secondary);padding:4px;border-radius:var(--r-lg);margin-bottom:1.25rem;flex-wrap:wrap}
+.tab-btn{flex:1;min-width:80px;padding:9px 10px;border:none;background:transparent;border-radius:var(--r-md);font-size:12px;font-weight:500;color:var(--text-secondary);cursor:pointer;transition:all .2s;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:5px;font-family:inherit}
+.tab-btn.active{background:var(--bg-primary);color:var(--text-primary);border:.5px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.tab-btn:hover:not(.active){background:var(--bg-primary);opacity:.7}
+.section{display:none}.section.active{display:block}
+
+/* SHARED CARDS */
+.card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:1rem}
+.card-head{padding:14px 18px;border-bottom:.5px solid var(--border);display:flex;align-items:center;gap:10px}
+.card-body{padding:18px}
+.lnum{font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px}
+.card-title{font-size:15px;font-weight:500;color:var(--text-primary)}
+
+/* TEACHER BUBBLES */
+.t-bubble{display:flex;gap:10px;margin-bottom:14px}
+.t-icon{width:30px;height:30px;border-radius:50%;background:#0f6e56;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;flex-shrink:0;margin-top:2px}
+.bubble{background:var(--bg-secondary);border-radius:0 var(--r-lg) var(--r-lg) var(--r-lg);padding:10px 15px;font-size:13.5px;line-height:1.75;color:var(--text-primary);flex:1}
+
+/* CALLOUTS */
+.callout{border-left:3px solid var(--blue);background:var(--bg-info);border-radius:0 var(--r-md) var(--r-md) 0;padding:10px 14px;margin:10px 0;font-size:13px;line-height:1.65;color:var(--text-primary)}
+.callout.green{border-color:var(--green);background:var(--bg-success)}
+.callout.amber{border-color:var(--amber);background:var(--bg-warning)}
+.callout.red{border-color:var(--red);background:var(--bg-danger)}
+
+/* GRIDS */
+.eg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin:10px 0}
+.eg-card{background:var(--bg-secondary);border:.5px solid var(--border);border-radius:var(--r-md);padding:10px 12px}
+.eg-card .eg-who{font-size:11px;font-weight:600;color:var(--text-secondary);margin-bottom:5px}
+.eg-card .eg-want{font-size:12.5px;color:var(--text-primary);line-height:1.5}
+.data-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.stat-card{background:var(--bg-secondary);border-radius:var(--r-md);padding:12px;text-align:center}
+.stat-card .sv{font-size:17px;font-weight:500;color:var(--text-primary)}
+.stat-card .sl{font-size:11px;color:var(--text-secondary);margin-top:4px;line-height:1.4}
+.stat-card.hi .sv{color:#0C447C}.stat-card.warn .sv{color:#993C1D}
+
+/* QUIZ */
+.quiz-section{border-top:.5px solid var(--border);padding:16px 18px;background:var(--bg-secondary)}
+.quiz-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-secondary);margin-bottom:14px;display:flex;align-items:center;gap:5px}
+.q-block{margin-bottom:20px}.q-block:last-child{margin-bottom:0}
+.q-text{font-size:13.5px;font-weight:500;color:var(--text-primary);margin-bottom:10px;line-height:1.55}
+.options{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.opt-btn{text-align:left;background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-md);padding:9px 13px;font-size:13px;color:var(--text-primary);cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:8px;font-family:inherit;width:100%}
+.opt-btn:hover:not(:disabled){border-color:var(--border-md);background:var(--bg-secondary)}
+.opt-btn.correct{background:var(--bg-success);border-color:#3B6D11;color:#27500A}
+.opt-btn.wrong{background:var(--bg-danger);border-color:#A32D2D;color:#791F1F}
+.opt-btn:disabled{cursor:default}
+.opt-letter{width:22px;height:22px;border-radius:50%;background:var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;flex-shrink:0}
+.feedback{font-size:12.5px;line-height:1.6;padding:9px 13px;border-radius:var(--r-md);display:none}
+.feedback.show{display:block}
+.feedback.good{background:var(--bg-success);color:var(--text-success)}
+.feedback.bad{background:var(--bg-danger);color:var(--text-danger)}
+
+/* NAV ROW */
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-top:.5px solid var(--border);background:var(--bg-primary)}
+.nav-btn{display:flex;align-items:center;gap:5px;font-size:13px;font-weight:500;padding:8px 16px;border-radius:var(--r-md);border:.5px solid var(--border-md);background:transparent;color:var(--text-primary);cursor:pointer;transition:all .15s;font-family:inherit}
+.nav-btn:hover:not(:disabled){background:var(--bg-secondary)}
+.nav-btn.primary{background:#0f6e56;color:#fff;border-color:#0f6e56}
+.nav-btn.primary:hover:not(:disabled){background:#0a5a45}
+.nav-btn:disabled{opacity:.35;cursor:default}
+.score-badge{font-size:12px;color:var(--text-secondary)}
+
+/* TOPBAR */
+.topbar{background:var(--bg-secondary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:14px 18px;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar-left{display:flex;align-items:center;gap:10px}
+.t-avatar{width:40px;height:40px;border-radius:50%;background:#0f6e56;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;flex-shrink:0}
+.topbar-title{font-size:14px;font-weight:500;color:var(--text-primary)}
+.topbar-sub{font-size:11px;color:var(--text-secondary);margin-top:2px}
+.prog-row{display:flex;align-items:center;gap:8px}
+.prog-dots{display:flex;gap:5px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--border-md);transition:background .3s}
+.dot.done{background:#0f6e56}.dot.active{background:#185FA5}
+.prog-label{font-size:11px;color:var(--text-secondary)}
+
+/* FINAL SCREEN */
+.final-card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:2.5rem 2rem;text-align:center}
+.final-card h2{font-size:22px;font-weight:500;color:var(--text-primary);margin-bottom:10px}
+.final-card p{font-size:13.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:1.5rem}
+.score-ring{width:90px;height:90px;border-radius:50%;background:var(--bg-success);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1.25rem}
+.score-ring .sr-num{font-size:24px;font-weight:500;color:#27500A}
+.score-ring .sr-sub{font-size:10px;color:#3B6D11}
+.restart-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:9px 20px;border-radius:var(--r-md);border:.5px solid var(--border-md);background:transparent;color:var(--text-primary);cursor:pointer;font-family:inherit;transition:background .15s}
+.restart-btn:hover{background:var(--bg-secondary)}
+
+/* Q&A SECTIONS (intext + exercises) */
+.q-section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-secondary);margin:1.5rem 0 .75rem;display:flex;align-items:center;gap:6px}
+.q-section-title::after{content:'';flex:1;height:.5px;background:var(--border)}
+.qa-card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);margin-bottom:.75rem;overflow:hidden}
+.qa-question{display:flex;align-items:flex-start;gap:10px;padding:1rem 1.25rem;cursor:pointer;user-select:none}
+.qa-question:hover{background:var(--bg-secondary)}
+.q-num{min-width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0;margin-top:1px}
+.q-txt{font-size:13.5px;font-weight:500;color:var(--text-primary);flex:1;line-height:1.55}
+.qa-answer{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.qa-answer.open{max-height:1200px}
+.qa-inner{padding:.9rem 1.25rem 1.25rem 3rem;border-top:.5px solid var(--border)}
+.qa-inner p{font-size:13.5px;line-height:1.75;color:var(--text-primary);margin-bottom:.6rem}
+.qa-inner ul{padding-left:1.2rem;margin-bottom:.6rem}
+.qa-inner li{font-size:13.5px;line-height:1.7;color:var(--text-primary);margin-bottom:5px}
+.ans-badge{display:inline-block;font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:10px;letter-spacing:.4px}
+.mcq-correct{display:inline-flex;align-items:center;gap:5px;background:var(--bg-success);color:var(--text-success);font-size:12px;font-weight:600;padding:5px 12px;border-radius:var(--r-md);margin-top:6px;margin-bottom:8px}
+.chev{transition:transform .3s;font-size:16px;color:var(--text-secondary);flex-shrink:0}
+.chev.open{transform:rotate(180deg)}
+
+/* TABLES */
+.tbl-wrap{overflow-x:auto;margin:.75rem 0}
+table.dtbl{width:100%;border-collapse:collapse;font-size:13px;min-width:380px}
+table.dtbl th{background:var(--bg-secondary);color:var(--text-secondary);font-weight:600;padding:9px 12px;text-align:left;border-bottom:.5px solid var(--border-md);white-space:nowrap}
+table.dtbl td{padding:9px 12px;border-bottom:.5px solid var(--border);color:var(--text-primary)}
+table.dtbl tr:last-child td{border-bottom:none}
+table.dtbl tr:hover td{background:var(--bg-secondary)}
+
+/* CONCEPT CARDS (overview / key terms) */
+.concept-card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:1.25rem;margin-bottom:1rem;cursor:pointer;transition:border-color .2s}
+.concept-card:hover{border-color:var(--border-md)}
+.concept-card.static{cursor:default}
+.c-head{display:flex;align-items:center;justify-content:space-between}
+.c-title-row{display:flex;align-items:center;gap:12px}
+.c-icon{width:38px;height:38px;border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.c-card-title{font-size:14px;font-weight:500;color:var(--text-primary)}
+.c-sub{font-size:12px;color:var(--text-secondary);margin-top:2px}
+.c-body{max-height:0;overflow:hidden;transition:max-height .4s ease,padding-top .2s}
+.c-body.open{max-height:800px;padding-top:1rem}
+.c-body p{font-size:13.5px;line-height:1.75;color:var(--text-primary);margin-bottom:.75rem}
+.c-body ul{padding-left:1.2rem;margin-bottom:.75rem}
+.c-body li{font-size:13.5px;line-height:1.7;color:var(--text-primary);margin-bottom:4px}
+
+/* KEY TERMS */
+.terms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:1rem}
+.term-card{background:var(--bg-secondary);border-radius:var(--r-md);padding:.85rem 1rem;border:.5px solid var(--border)}
+.term-card h4{font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:5px}
+.term-card p{font-size:12px;color:var(--text-secondary);line-height:1.55}
+
+/* FACTS LIST */
+.facts-wrap{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:1.25rem}
+.facts-wrap li{font-size:13.5px;color:var(--text-primary);margin-bottom:10px;line-height:1.65;padding-left:1rem;position:relative;list-style:none}
+.facts-wrap li::before{content:'★';position:absolute;left:0;font-size:10px;color:var(--amber);top:3px}
+
+/* MINDMAP */
+.mindmap{background:var(--bg-secondary);border-radius:var(--r-lg);padding:1.5rem;margin-bottom:1rem;border:.5px solid var(--border)}
+.mindmap h3{font-size:14px;font-weight:500;color:var(--text-primary);margin-bottom:1rem;text-align:center}
+.mm-center{background:#0e6e56;color:#fff;font-size:14px;font-weight:500;padding:10px 24px;border-radius:24px;display:block;text-align:center;width:fit-content;margin:0 auto 1.25rem}
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.branch{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-md);padding:12px}
+.branch .bt{font-size:12px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:5px}
+.branch ul{list-style:none}
+.branch ul li{font-size:11.5px;color:var(--text-secondary);padding:2px 0;display:flex;align-items:flex-start;gap:4px}
+.branch ul li::before{content:'→';font-size:10px;flex-shrink:0;margin-top:2px;color:var(--text-secondary)}
+
+@media(max-width:560px){
+  .data-row{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:22px}
+  .tab-btn{font-size:11px;padding:7px 6px}
+  .qa-inner{padding-left:1.25rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Class 10 · Economics · NCERT 2026-27</div>
+  <h1>Chapter 1: Development</h1>
+  <p>Understanding Economic Development — Complete interactive study material with all questions answered</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><i class="ti ti-chalkboard" aria-hidden="true"></i> Interactive Class</div>
+    <div class="hero-stat"><i class="ti ti-message-circle" aria-hidden="true"></i> In-text Q&amp;A</div>
+    <div class="hero-stat"><i class="ti ti-pencil" aria-hidden="true"></i> 13 Exercises</div>
+    <div class="hero-stat"><i class="ti ti-table" aria-hidden="true"></i> Data &amp; Tables</div>
+    <div class="hero-stat"><i class="ti ti-bookmark" aria-hidden="true"></i> Key Terms</div>
+  </div>
+</div>
+
+<!-- MAIN TABS -->
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('class',this)"><i class="ti ti-chalkboard" aria-hidden="true"></i> Class</button>
+  <button class="tab-btn" onclick="switchTab('overview',this)"><i class="ti ti-map-2" aria-hidden="true"></i> Overview</button>
+  <button class="tab-btn" onclick="switchTab('intext',this)"><i class="ti ti-message-circle" aria-hidden="true"></i> In-text Q&amp;A</button>
+  <button class="tab-btn" onclick="switchTab('exercises',this)"><i class="ti ti-pencil" aria-hidden="true"></i> Exercises</button>
+  <button class="tab-btn" onclick="switchTab('data',this)"><i class="ti ti-table" aria-hidden="true"></i> Data &amp; Tables</button>
+  <button class="tab-btn" onclick="switchTab('terms',this)"><i class="ti ti-bookmark" aria-hidden="true"></i> Key Terms</button>
+</div>
+
+<!-- ===================== CLASS TAB ===================== -->
+<div id="tab-class" class="section active">
+  <div id="cls-app"></div>
+</div>
+
+<!-- ===================== OVERVIEW TAB ===================== -->
+<div id="tab-overview" class="section">
+  <div class="mindmap">
+    <h3>Chapter at a glance</h3>
+    <div class="mm-center">Development</div>
+    <div class="branches">
+      <div class="branch"><div class="bt" style="color:#0e6e56">🎯 Goals</div><ul><li>Different for different people</li><li>Income + non-material</li><li>Can be conflicting</li><li>National development</li></ul></div>
+      <div class="branch"><div class="bt" style="color:#185FA5">📊 Measurement</div><ul><li>Per capita income</li><li>Average income</li><li>Income distribution</li><li>World Bank criterion</li></ul></div>
+      <div class="branch"><div class="bt" style="color:#993C1D">🏥 Beyond Income</div><ul><li>IMR, Literacy Rate</li><li>Public facilities</li><li>Kerala vs Haryana</li><li>HDI by UNDP</li></ul></div>
+      <div class="branch"><div class="bt" style="color:#BA7517">🌱 Sustainability</div><ul><li>Renewable resources</li><li>Non-renewable depletion</li><li>Groundwater crisis</li><li>Crude oil reserves</li></ul></div>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#e1f5ee;color:#0e6e56"><i class="ti ti-users" aria-hidden="true"></i></div><div><div class="c-card-title">What is Development?</div><div class="c-sub">Different people, different goals</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p>Development involves thinking about aspirations, desires, and ways to achieve goals — both personal and national. People seek more income, but also equal treatment, freedom, security, and respect.</p>
+      <div class="callout"><strong>Key idea:</strong> Different persons have different developmental goals. What may be development for one may even be destructive for another.</div>
+      <p>Example: Industrialists want dams for electricity → but this displaces tribals who prefer small check dams. Same goal (development), conflicting means.</p>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#e6f1fb;color:#185FA5"><i class="ti ti-currency-rupee" aria-hidden="true"></i></div><div><div class="c-card-title">How to Compare Countries</div><div class="c-sub">Per capita income &amp; World Bank</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p><strong>Per capita income</strong> = Total income of a country ÷ Total population.</p>
+      <div class="callout"><strong>World Bank classification (2024):</strong><br>• High income (rich): ≥ US$ 66,500/year<br>• Low income: ≤ US$ 2,300/year<br>• India: ~US$ 11,000 → lower middle income</div>
+      <p>Limitation: Averages hide inequality. Country A (all earning ~₹10,000) is better than Country B (4 earning ₹500, one earning ₹48,000) even if averages are equal.</p>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#faece7;color:#993C1D"><i class="ti ti-heart-rate" aria-hidden="true"></i></div><div><div class="c-card-title">Kerala vs Haryana</div><div class="c-sub">Income is not everything</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p>Haryana has higher per capita income (₹3,25,759) than Kerala (₹2,81,001), yet:</p>
+      <ul><li>Kerala IMR: <strong>6</strong> per 1000 vs Haryana's <strong>28</strong> — nearly 3× worse</li><li>Literacy Rate: Kerala 94% vs Haryana 82%</li><li>Net Attendance (15-17 yrs): Kerala 94% vs Haryana 73%</li></ul>
+      <div class="callout"><strong>Reason:</strong> Money in your pocket cannot buy all goods &amp; services needed to live well. Public facilities — healthcare, schools, PDS — matter greatly.</div>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#eaf3de;color:#3B6D11"><i class="ti ti-world" aria-hidden="true"></i></div><div><div class="c-card-title">Human Development Index (HDI)</div><div class="c-sub">UNDP's broader measure</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p>The UNDP's Human Development Report compares countries on: per capita income (PPP $), life expectancy at birth, and mean years of schooling.</p>
+      <div class="callout">India's HDI rank (2023): <strong>130 out of 193 countries</strong>. Sri Lanka ranks 89 — far ahead despite being a small neighbour!</div>
+      <p>Nepal and Bangladesh have lower per capita income than India, yet perform better on life expectancy.</p>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#faeeda;color:#BA7517"><i class="ti ti-leaf" aria-hidden="true"></i></div><div><div class="c-card-title">Sustainability of Development</div><div class="c-sub">Can today's growth last?</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p><strong>Renewable resources</strong> (groundwater, crops) can be replenished but can be overused. 300 Indian districts have seen water levels fall over 4 metres in 20 years.</p>
+      <p><strong>Non-renewable resources</strong> (crude oil, coal) cannot be replenished. World crude oil reserves will last only ~47 years at current rates.</p>
+      <div class="callout amber">"We have not inherited the world from our forefathers — we have borrowed it from our children."</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== IN-TEXT Q&A TAB ===================== -->
+<div id="tab-intext" class="section">
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Section 1 (pg 6)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e1f5ee;color:#085041">1</div><div class="q-txt">Why do different persons have different notions of development? Which explanation is more important — (a) people are different, or (b) life situations are different?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e1f5ee;color:#085041">Answer</div>
+      <p>Different persons have different notions of development because they have different needs and aspirations shaped by their circumstances.</p>
+      <p><strong>Option (b) — life situations are different — is more important.</strong> A landless labourer and a prosperous farmer face very different daily realities. A girl from a rich family desires freedom and equality; a tribal desires land rights. These differences arise not from personality but from where people stand in life.</p>
+      <p>Even the same person in different circumstances would desire different things. So life situations primarily shape developmental goals.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e1f5ee;color:#085041">2</div><div class="q-txt">Do these two statements mean the same? (a) People have different developmental goals. (b) People have conflicting developmental goals.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e1f5ee;color:#085041">Answer</div>
+      <p><strong>No, these statements do not mean the same.</strong></p>
+      <p><strong>Different goals:</strong> A farmer wants good rains; an urban youth wants a job — different but not conflicting.</p>
+      <p><strong>Conflicting goals:</strong> When one person's development harms another's. Industrialists building dams (development for them) displaces tribals (destruction for them). All conflicting goals are different, but not all different goals are conflicting.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e1f5ee;color:#085041">3</div><div class="q-txt">Give some examples where factors other than income are important aspects of our lives.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e1f5ee;color:#085041">Answer</div>
+      <ul>
+        <li><strong>Security:</strong> A regular job with less pay may be preferred over a high-paying job with no security.</li>
+        <li><strong>Respect and dignity:</strong> Women in paid work gain dignity in the household and society.</li>
+        <li><strong>Freedom:</strong> A safe and secure environment allows more women to take up jobs or run businesses.</li>
+        <li><strong>Friendship and relationships:</strong> Friends enrich our lives in ways money cannot buy.</li>
+        <li><strong>Equal treatment:</strong> Freedom from discrimination matters regardless of income level.</li>
+        <li><strong>Clean environment:</strong> Money cannot always buy a pollution-free environment.</li>
+        <li><strong>Community health:</strong> Protection from infectious diseases requires community-level preventive steps.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e1f5ee;color:#085041">4</div><div class="q-txt">Explain some of the important ideas of the above section in your own words.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e1f5ee;color:#085041">Answer</div>
+      <p>Development is not just about income. It is about quality of life, which includes many non-material things. Different people desire different things depending on where they are in life — there is no single idea of development that applies to everyone.</p>
+      <p>Sometimes, what benefits one group harms another. Building a dam produces electricity for industries but submerges tribal homes. So development goals can conflict.</p>
+      <p>National development means finding a fair path that benefits the largest number of people — asking what is just and equitable for all.</p>
+    </div></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Average Income (pg 9)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">1</div><div class="q-txt">Give three examples where an average is used for comparing situations.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <ul>
+        <li><strong>Average marks:</strong> Class average used to compare performance of different schools.</li>
+        <li><strong>Average rainfall:</strong> Annual average used to compare climates of different regions.</li>
+        <li><strong>BMI (Body Mass Index):</strong> Uses average expected height and weight to assess health.</li>
+        <li><strong>Per capita income:</strong> Average income per person used to compare countries.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">2</div><div class="q-txt">Why do you think average income is an important criterion for development? Explain.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p>Average (per capita) income is important because it allows fair comparison of countries with different population sizes. Higher income generally means people can access more goods and services. It is simple, calculable, and universally accepted — used by the World Bank for country classification.</p>
+      <p>However, it does not reveal how income is distributed — a country with high average income may still have extreme inequality.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">3</div><div class="q-txt">Besides size of per capita income, what other property of income is important in comparing two or more societies?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p>The <strong>distribution of income</strong> is equally important. It tells us how equitably income is spread among the population. As shown by the Country A and B example — both have the same average, but Country A (all citizens earning ~₹10,000) is more equitable and preferable to Country B (4 earning ₹500, one earning ₹48,000).</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">4</div><div class="q-txt">Suppose records show that the average income in a country has been increasing over time. Can we conclude that all sections have become better off?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p><strong>No.</strong> Rising average income can hide inequality. If the rich get richer while the poor stay the same, the average rises — but the majority are no better off. Example: If in Country B the rich person's income rises from ₹48,000 to ₹80,000 while the four poor remain at ₹500 each, the average rises — but 4 out of 5 people see no improvement.</p>
+    </div></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Public Facilities (pg 12)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">1</div><div class="q-txt">Is Haryana ahead of Kerala in literacy rate etc., as it is in terms of per capita income?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <p><strong>No, Haryana is NOT ahead of Kerala</strong> in human development indicators despite higher income.</p>
+      <ul>
+        <li>Literacy Rate: Haryana 82% vs Kerala 94%</li>
+        <li>Infant Mortality Rate: Haryana 28 vs Kerala 6 (nearly 3× worse)</li>
+        <li>Net Attendance Ratio (15-17 yrs): Haryana 73% vs Kerala 94%</li>
+      </ul>
+      <p>This proves that per capita income alone does not determine human well-being.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">2</div><div class="q-txt">Think of other examples where collective provision of goods and services is cheaper than individual provision.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <ul>
+        <li><strong>Fire brigade:</strong> One community fire station is cheaper than each family maintaining its own firefighting equipment.</li>
+        <li><strong>Street lighting:</strong> Collective street lights are cheaper than individual lanterns for each household.</li>
+        <li><strong>Public transport:</strong> Buses and trains reduce per-person cost compared to everyone owning a car.</li>
+        <li><strong>Water supply pipelines:</strong> Common supply cheaper than individual borewells for each home.</li>
+        <li><strong>Parks and playgrounds:</strong> One shared park benefits thousands at low per-person cost.</li>
+        <li><strong>Vaccination drives:</strong> Community vaccination prevents disease for everyone at minimal individual cost.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">3</div><div class="q-txt">Does availability of good health and educational facilities depend only on money spent by the government? What other factors are relevant?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <p><strong>No.</strong> Other important factors include:</p>
+      <ul>
+        <li><strong>Effective utilisation of funds:</strong> Money must reach beneficiaries without corruption.</li>
+        <li><strong>Community participation:</strong> Awareness and demand ensure facilities are actually used.</li>
+        <li><strong>Quality of facilities:</strong> A school without teachers provides little benefit regardless of spending.</li>
+        <li><strong>Social equality:</strong> Caste and gender discrimination can prevent access even when facilities exist.</li>
+        <li><strong>Infrastructure:</strong> Roads and connectivity help remote areas access services.</li>
+        <li><strong>Political will:</strong> Kerala's success is partly due to strong commitment to social welfare.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">4</div><div class="q-txt">In Tamil Nadu, 90% of rural people use ration shops; in West Bengal only 35% do. Where would people be better off and why?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <p><strong>People in Tamil Nadu would be better off</strong> because the PDS functions far more effectively there. With 90% utilisation, the poor have much better food and nutritional security through subsidised food grains.</p>
+      <p>In West Bengal, with only 35% using ration shops, most poor people must buy food at market prices, leaving less money for health, education, and other needs.</p>
+    </div></div>
+  </div>
+</div>
+
+<!-- ===================== EXERCISES TAB ===================== -->
+<div id="tab-exercises" class="section">
+  <div class="q-section-title"><i class="ti ti-pencil" aria-hidden="true"></i> NCERT Exercises (pg 16–17)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">1</div><div class="q-txt">Development of a country can generally be determined by (i) its per capita income (ii) its average literacy level (iii) health status of its people (iv) all the above</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> Correct answer: (iv) All the above</div>
+      <p>Development depends on multiple factors. Per capita income shows material well-being; literacy shows educational development; health status shows quality of life. All three together give a more complete picture — as reflected in the UNDP's HDI approach.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">2</div><div class="q-txt">Which of the following neighbouring countries has better performance in terms of human development than India? (i) Bangladesh (ii) Sri Lanka (iii) Nepal (iv) Pakistan</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> Correct answer: (ii) Sri Lanka</div>
+      <p>As per HDR 2025 data (for 2023), Sri Lanka has an HDI rank of 89, far better than India's 130 out of 193 countries. Sri Lanka also has higher GNI per capita (PPP $12,616 vs $9,047), higher life expectancy (77.5 vs 72 years), and more mean years of schooling (10.8 vs 6.9 years).</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">3</div><div class="q-txt">Average per capita income of 4 families is ₹5000. Three families earn ₹4000, ₹7000, ₹3000. What is the income of the fourth family? (i) ₹7500 (ii) ₹3000 (iii) ₹2000 (iv) ₹6000</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> Correct answer: (iv) ₹6000</div>
+      <p><strong>Calculation:</strong> Total income = 5000 × 4 = ₹20,000. Sum of 3 known = 4000 + 7000 + 3000 = ₹14,000. Fourth family = 20,000 − 14,000 = <strong>₹6,000</strong></p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">4</div><div class="q-txt">What is the main criterion used by the World Bank in classifying different countries? What are the limitations of this criterion, if any?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>Main criterion:</strong> Per capita income (total income ÷ total population). High income ≥ US$66,500/year; Low income ≤ US$2,300/year; India = US$11,000 (lower middle income).</p>
+      <p><strong>Limitations:</strong></p>
+      <ul>
+        <li>Averages hide inequality and income distribution within the country.</li>
+        <li>Does not reflect quality of life — high income can coexist with poor health and education.</li>
+        <li>Ignores non-material aspects like security, freedom, and environmental quality.</li>
+        <li>Does not consider whether income is earned sustainably or by depleting resources.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">5</div><div class="q-txt">In what respects is the criterion used by the UNDP for measuring development different from the one used by the World Bank?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>Aspect</th><th>World Bank</th><th>UNDP (HDI)</th></tr>
+        <tr><td>Basis</td><td>Per capita income only</td><td>Income + Health + Education</td></tr>
+        <tr><td>Indicators</td><td>GNI per capita (PPP $)</td><td>Life expectancy, Mean years of schooling, GNI per capita</td></tr>
+        <tr><td>Focus</td><td>Economic growth</td><td>Human well-being</td></tr>
+        <tr><td>Approach</td><td>Narrow (monetary)</td><td>Broad (multidimensional)</td></tr>
+      </table></div>
+      <p>UNDP recognises that what matters in development is what is happening to citizens — their health and well-being — not just the size of the economy.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">6</div><div class="q-txt">Why do we use averages? Are there any limitations to their use? Illustrate with your own examples related to development.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>Why we use averages:</strong> Averages allow comparison of large groups by summarising data into one number. Per capita income allows comparison between countries with different populations.</p>
+      <p><strong>Limitations:</strong></p>
+      <ul>
+        <li>Averages hide disparities. Country A (all earning ~₹10,000) and Country B (4 earning ₹500, one earning ₹48,000) have the same average but very different realities.</li>
+        <li>A rising national average does not mean all groups benefit — the rich getting richer raises the average even if the poor do not improve.</li>
+        <li>Averages of rainfall, BMI, marks, etc., all mask extremes and variation.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">7</div><div class="q-txt">Kerala, with lower per capita income has a better human development ranking than Haryana. Hence, per capita income is not a useful criterion at all and should not be used. Do you agree? Discuss.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>No, I do not completely agree.</strong> The Kerala-Haryana example proves income alone is insufficient. Kerala's superior IMR (6 vs 28), literacy (94% vs 82%), and attendance (94% vs 73%) despite lower income show income is not everything.</p>
+      <p>However, per capita income should not be abandoned because: more income generally means access to more goods and services; it is easy to measure and compare; and it remains an important starting point used by the World Bank.</p>
+      <p><strong>Conclusion:</strong> Per capita income is necessary but not sufficient. It must be used alongside health, education, and equity indicators for a complete picture.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">8</div><div class="q-txt">Find out the present sources of energy that are used by the people in India. What could be the other possibilities fifty years from now?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>Present sources:</strong> Coal (thermal power), crude oil and natural gas (petrol, diesel, LPG), firewood and biomass (rural areas), hydroelectric power, nuclear energy, solar and wind energy.</p>
+      <p><strong>Fifty years from now:</strong> Solar energy, wind energy (offshore and onshore), hydrogen fuel cells, advanced nuclear (fusion), biogas from organic waste, tidal and ocean energy. India's target of 500 GW of renewable energy by 2030 is a step in this direction.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">9</div><div class="q-txt">Why is the issue of sustainability important for development?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <ul>
+        <li><strong>Resources are finite:</strong> Crude oil (~47 years left) and coal will eventually run out.</li>
+        <li><strong>Future generations:</strong> "We have borrowed this world from our children." Overuse today leaves less for tomorrow.</li>
+        <li><strong>Renewables can be overused:</strong> Groundwater is being overused in 1/3 of India — 60% will face scarcity in 25 years.</li>
+        <li><strong>Global concern:</strong> Environmental degradation crosses borders — sustainability requires global action.</li>
+        <li><strong>Irreversible damage:</strong> Some ecological damage cannot be undone, permanently limiting future options.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">10</div><div class="q-txt">"The Earth has enough resources to meet the needs of all but not enough to satisfy the greed of even one person." How is this statement relevant to the discussion of development?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>This statement by Mahatma Gandhi captures the essence of sustainable development. The Earth has enough resources to meet everyone's basic needs if used wisely and equitably. The problem is over-consumption — a small fraction of the world's population consumes a disproportionately large share.</p>
+      <ul>
+        <li>If all countries pursue the same resource-intensive path as rich nations, Earth's resources will be exhausted rapidly.</li>
+        <li>The Abidjan toxic waste case shows greed overriding people's well-being.</li>
+        <li>Groundwater overuse in prosperous Punjab depletes what is needed for future generations.</li>
+      </ul>
+      <p>The solution lies in equitable distribution and sustainable consumption patterns.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">11</div><div class="q-txt">List a few examples of environmental degradation that you may have observed around you.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <ul>
+        <li><strong>Air pollution:</strong> Smoke from factories, vehicles, and crop stubble burning causing severe smog.</li>
+        <li><strong>Water pollution:</strong> Industrial waste and untreated sewage dumped into rivers like Yamuna and Ganga.</li>
+        <li><strong>Groundwater depletion:</strong> Excessive borewell drilling has lowered water tables in many districts.</li>
+        <li><strong>Deforestation:</strong> Clearing of forests for construction and agriculture destroys biodiversity.</li>
+        <li><strong>Solid waste:</strong> Overflowing landfills and plastic waste in public spaces and water bodies.</li>
+        <li><strong>Soil degradation:</strong> Excessive chemical fertilisers reduce soil fertility over time.</li>
+        <li><strong>Loss of biodiversity:</strong> Encroachment into wildlife habitats threatens many species.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">12</div><div class="q-txt">For each of the items given in Table 1.6, find out which country is at the top and which is at the bottom.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>Indicator</th><th>Top (Best)</th><th>Bottom (Worst)</th></tr>
+        <tr><td>GNI Per Capita (PPP $)</td><td>Sri Lanka (12,616)</td><td>Nepal (4,726)</td></tr>
+        <tr><td>Life Expectancy at Birth</td><td>Sri Lanka (77.5 yrs)</td><td>Myanmar (66.9 yrs)</td></tr>
+        <tr><td>Mean Years of Schooling</td><td>Sri Lanka (10.8 yrs)</td><td>Pakistan (4.3 yrs)</td></tr>
+        <tr><td>HDI Rank (lower = better)</td><td>Sri Lanka (89)</td><td>Pakistan (168)</td></tr>
+      </table></div>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">13</div><div class="q-txt">Compare the nutritional level of people in Kerala and Madhya Pradesh. Can you guess why around one-fifth of people in the country are undernourished?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>(i) Comparison (BMI below normal, 2019-21):</strong></p>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>State</th><th>Male (%)</th><th>Female (%)</th></tr>
+        <tr><td>Kerala</td><td>8.5</td><td>10</td></tr>
+        <tr><td>Madhya Pradesh</td><td>28</td><td>28</td></tr>
+        <tr><td>All India</td><td>20</td><td>23</td></tr>
+      </table></div>
+      <p>Kerala is far better nourished — only 8.5-10% are underweight vs 28% in MP, because of Kerala's effective PDS, healthcare, literacy, and women's empowerment.</p>
+      <p><strong>(ii) Why is 1/5 of India undernourished despite food availability?</strong></p>
+      <ul>
+        <li>Poverty — people cannot afford food at market prices.</li>
+        <li>Ineffective PDS in many states — food meant for the poor does not reach them due to corruption.</li>
+        <li>Unequal distribution — surplus in some states, shortage in others.</li>
+        <li>Social norms — women sacrifice food for other family members.</li>
+        <li>Poor sanitation — diseases prevent proper nutrition absorption.</li>
+        <li>Food wastage due to poor storage and supply chain infrastructure.</li>
+      </ul>
+    </div></div>
+  </div>
+</div>
+
+<!-- ===================== DATA & TABLES TAB ===================== -->
+<div id="tab-data" class="section">
+  <div class="q-section-title"><i class="ti ti-table" aria-hidden="true"></i> Key Data from the Chapter</div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Table 1.3 &amp; 1.4 — States Comparison (Haryana, Kerala, Bihar)</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>State</th><th>Per Capita Income 2023-24 (₹)</th><th>IMR per 1000 (2020)</th><th>Literacy Rate % (2017-18)</th><th>Net Attendance Ratio (2017-18)</th></tr>
+      <tr><td><strong>Haryana</strong></td><td>3,25,759</td><td>28</td><td>82</td><td>73</td></tr>
+      <tr><td><strong>Kerala</strong></td><td>2,81,001</td><td>6</td><td>94</td><td>94</td></tr>
+      <tr><td><strong>Bihar</strong></td><td>60,337</td><td>27</td><td>62</td><td>69</td></tr>
+    </table></div>
+    <div class="callout amber">Although Haryana has the highest per capita income, Kerala performs far better on all human development indicators — demonstrating that income alone is not development.</div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Table 1.2 — Average Income Comparison (Country A vs B)</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Country</th><th>Citizen I</th><th>Citizen II</th><th>Citizen III</th><th>Citizen IV</th><th>Citizen V</th><th>Average</th></tr>
+      <tr><td><strong>Country A</strong></td><td>9,500</td><td>10,500</td><td>9,800</td><td>10,000</td><td>10,200</td><td><strong>10,000</strong></td></tr>
+      <tr><td><strong>Country B</strong></td><td>500</td><td>500</td><td>500</td><td>500</td><td>48,000</td><td><strong>10,000</strong></td></tr>
+    </table></div>
+    <div class="callout">Both countries have the same average of ₹10,000 — but Country A is far preferable because income is equitably distributed. Country B has extreme inequality.</div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Table 1.6 — India &amp; Neighbours (HDR 2025, data for 2023)</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Country</th><th>GNI Per Capita (PPP $)</th><th>Life Expectancy</th><th>Mean Yrs of Schooling</th><th>HDI Rank</th></tr>
+      <tr><td>Sri Lanka</td><td>12,616</td><td>77.5</td><td>10.8</td><td><strong>89</strong></td></tr>
+      <tr><td><strong>India</strong></td><td><strong>9,047</strong></td><td><strong>72</strong></td><td><strong>6.9</strong></td><td><strong>130</strong></td></tr>
+      <tr><td>Bangladesh</td><td>8,498</td><td>74.7</td><td>6.8</td><td>130</td></tr>
+      <tr><td>Nepal</td><td>4,726</td><td>70.4</td><td>4.5</td><td>145</td></tr>
+      <tr><td>Myanmar</td><td>4,919</td><td>66.9</td><td>6.4</td><td>150</td></tr>
+      <tr><td>Pakistan</td><td>5,501</td><td>67.6</td><td>4.3</td><td>168</td></tr>
+    </table></div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Table 1.7 — Crude Oil Reserves</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Region/Country</th><th>Reserves (2017, Thousand Million Barrels)</th><th>Years Reserves Will Last</th></tr>
+      <tr><td>Middle East</td><td>836</td><td>70 years</td></tr>
+      <tr><td>United States of America</td><td>69</td><td>10.5 years</td></tr>
+      <tr><td><strong>World</strong></td><td><strong>1,732</strong></td><td><strong>~47 years</strong></td></tr>
+    </table></div>
+    <div class="callout amber">At current rates, world crude oil reserves will last only ~47 years. India imports most of its oil — rising prices are a serious burden on the economy.</div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Table 1.5 — UP Rural Education (Activity 2 — Filled Blanks)</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Category</th><th>Male</th><th>Female</th></tr>
+      <tr><td>Literacy rate for rural population</td><td>76%</td><td>54%</td></tr>
+      <tr><td>Literacy rate: rural children aged 10-14</td><td>90%</td><td>87%</td></tr>
+      <tr><td>% rural children aged 10-14 attending school</td><td>85%</td><td>82%</td></tr>
+    </table></div>
+    <div class="callout green">
+      <strong>(a)</strong> Literacy rate: <strong>76%</strong> rural males and <strong>54%</strong> rural females. Children not in school: <strong>15%</strong> rural boys and <strong>18%</strong> rural girls.<br><br>
+      <strong>(b)</strong> Illiteracy among children aged 10-14: <strong>13%</strong> rural females (100−87) and <strong>10%</strong> rural males (100−90).<br><br>
+      <strong>(c)</strong> This high illiteracy among the <strong>10–14 year</strong> age group is most disturbing — the constitutional goal of free and compulsory education by 1960 is still not fully achieved.
+    </div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">BMI Data — Exercise 13 (NFHS-5, 2019-21)</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>State</th><th>Male (% BMI &lt;18.5)</th><th>Female (% BMI &lt;18.5)</th></tr>
+      <tr><td>Kerala</td><td>8.5%</td><td>10%</td></tr>
+      <tr><td>Karnataka</td><td>17%</td><td>21%</td></tr>
+      <tr><td>Madhya Pradesh</td><td>28%</td><td>28%</td></tr>
+      <tr><td><strong>All India</strong></td><td><strong>20%</strong></td><td><strong>23%</strong></td></tr>
+    </table></div>
+    <div class="callout amber">~1 in 5 Indians is undernourished despite enough food production — reflecting failures in distribution, public facilities, poverty, and inequality.</div>
+  </div>
+</div>
+
+<!-- ===================== KEY TERMS TAB ===================== -->
+<div id="tab-terms" class="section">
+  <div class="q-section-title"><i class="ti ti-bookmark" aria-hidden="true"></i> Important Terms to Know</div>
+  <div class="terms-grid">
+    <div class="term-card"><h4>Per Capita Income</h4><p>Total national income divided by total population. Used to compare average economic well-being across countries.</p></div>
+    <div class="term-card"><h4>Infant Mortality Rate (IMR)</h4><p>Number of children dying before age 1 per 1000 live births in a year. Lower IMR = better development.</p></div>
+    <div class="term-card"><h4>Literacy Rate</h4><p>Proportion of literate persons in the population aged 7 years and above.</p></div>
+    <div class="term-card"><h4>Net Attendance Ratio</h4><p>Percentage of children aged 15–17 attending secondary school out of total children in that age group.</p></div>
+    <div class="term-card"><h4>Life Expectancy at Birth</h4><p>Average expected length of life of a person at the time of birth. A key HDI indicator.</p></div>
+    <div class="term-card"><h4>Human Development Index (HDI)</h4><p>UNDP measure combining per capita income, life expectancy, and mean years of schooling. Ranks 193 countries.</p></div>
+    <div class="term-card"><h4>Purchasing Power Parity (PPP)</h4><p>Adjusts per capita income so that every dollar buys the same amount of goods &amp; services in any country.</p></div>
+    <div class="term-card"><h4>Sustainable Development</h4><p>Development that meets present needs without compromising the ability of future generations to meet their own needs.</p></div>
+    <div class="term-card"><h4>Renewable Resources</h4><p>Resources replenished by nature (groundwater, forests). Can still be overused if extraction exceeds replenishment.</p></div>
+    <div class="term-card"><h4>Non-Renewable Resources</h4><p>Resources with a fixed stock that cannot be replenished (crude oil, coal). Will eventually be exhausted.</p></div>
+    <div class="term-card"><h4>Public Distribution System (PDS)</h4><p>Government system providing food grains at subsidised prices to the poor. Effective in Tamil Nadu and Kerala.</p></div>
+    <div class="term-card"><h4>National Development</h4><p>A fair and just path of growth that benefits the largest number of people, considering material and non-material goals.</p></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-star" aria-hidden="true"></i> Important Facts for Exams</div>
+  <ul class="facts-wrap">
+    <li>World Bank classifies countries by per capita income. High income ≥ US$66,500 (2024); India = US$11,000 = <strong>lower middle income.</strong></li>
+    <li>India's HDI rank (2023) = <strong>130</strong> out of 193 countries. Sri Lanka = 89 — best in South Asia.</li>
+    <li>Kerala IMR = <strong>6</strong>; Haryana IMR = <strong>28</strong> (2020) — despite Haryana having higher per capita income.</li>
+    <li>World crude oil reserves will last <strong>~47 years</strong> at current extraction rates (2017 data, Energy Institute).</li>
+    <li>About <strong>300 Indian districts</strong> have seen groundwater level decline of over 4 metres in 20 years.</li>
+    <li>Haryana per capita income (2023-24): ₹3,25,759 | Kerala: ₹2,81,001 | Bihar: ₹60,337.</li>
+    <li>Human Development Report is published by <strong>UNDP</strong> (United Nations Development Programme).</li>
+    <li>Country A (all earn ~₹10,000 each) is <strong>more equitable</strong> than Country B (4 at ₹500, 1 at ₹48,000) — even though both have the same average.</li>
+    <li>In Tamil Nadu, <strong>90%</strong> of rural people use ration shops vs only <strong>35%</strong> in West Bengal — Tamil Nadu has better food security.</li>
+    <li>Kerala's low IMR is due to adequate provision of <strong>basic health and educational facilities</strong> and a well-functioning PDS.</li>
+    <li>~1/5 of India is undernourished despite food availability — due to poverty, ineffective PDS, inequality, and poor sanitation.</li>
+    <li>Famous quote: <em>"We have not inherited the world from our forefathers — we have borrowed it from our children."</em></li>
+  </ul>
+</div>
+
+</div><!-- end wrap -->
+
+<script>
+/* ---- TAB SWITCHING ---- */
+function switchTab(name, btn) {
+  document.querySelectorAll('.section').forEach(function(s){ s.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+
+/* ---- CONCEPT CARD TOGGLE ---- */
+function toggleC(card) {
+  if (card.classList.contains('static')) return;
+  var body = card.querySelector('.c-body');
+  var chev = card.querySelector('.chev');
+  if (body) body.classList.toggle('open');
+  if (chev) chev.classList.toggle('open');
+}
+
+/* ---- Q&A TOGGLE ---- */
+function toggleQA(header) {
+  var answer = header.nextElementSibling;
+  var chev = header.querySelector('.chev');
+  if (answer) answer.classList.toggle('open');
+  if (chev) chev.classList.toggle('open');
+}
+
+/* ---- CLASSROOM ---- */
+var lessons = [
+  {
+    num:"01", color:"#E6F1FB", numColor:"#0C447C",
+    title:"What is development?",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Welcome to Chapter 1! Let's start with the big question — <b>what does development mean?</b><br><br>Development is about progress — having better lives, fulfilling our desires, and building a better society. But here's the important twist: <b>different people want different things!</b></div></div>
+    <div class="eg-grid">
+      <div class="eg-card"><div class="eg-who">Landless labourer</div><div class="eg-want">More work days, better wages, no discrimination, quality education for children</div></div>
+      <div class="eg-card"><div class="eg-who">Prosperous farmer (Punjab)</div><div class="eg-want">Higher crop support prices, cheap labour, settle children abroad</div></div>
+      <div class="eg-card"><div class="eg-who">Girl from rich family</div><div class="eg-want">Equal freedom as her brother, pursue studies abroad</div></div>
+      <div class="eg-card"><div class="eg-who">Adivasi (Narmada valley)</div><div class="eg-want">Land rights, no displacement by dam, cultural identity</div></div>
+    </div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Notice something? The farmer wants <b>cheap labour</b> — but that conflicts with the labourer wanting <b>better wages!</b> Building a dam gives electricity to industrialists but displaces tribals who prefer small check dams. Development goals can directly conflict.</div></div>
+    <div class="callout"><b>Two key ideas:</b><br>1. Different persons can have different developmental goals.<br>2. What may be development for one may be <b>destructive</b> for the other.</div>`,
+    questions:[
+      {q:"Why do different people have different notions of development?",opts:["Because people are born with different personalities","Because their life situations and needs are different","Because some people are more educated","Because of differences in religion"],ans:1,fb:"Correct! Life situation is the key reason. A landless labourer and a prosperous farmer face very different realities. The NCERT says option (b) — life situations being different — is the more important explanation."},
+      {q:"Industrialists want a big dam for electricity. Tribals living near the river oppose it. This is an example of:",opts:["Same developmental goals","Different but non-conflicting goals","Conflicting developmental goals","National development"],ans:2,fb:"Exactly right! The dam represents development for industrialists but is destructive for tribals (displacement, loss of land). This is a classic example of conflicting developmental goals."}
+    ]
+  },
+  {
+    num:"02", color:"#E1F5EE", numColor:"#085041",
+    title:"Income and other goals",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Now, if you look at the goals of all those different people — what's the one thing almost all of them want? <b>More income!</b> Regular work, better wages, decent crop prices — it all comes down to money at some level.</div></div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">But — and this is very important — income is <b>NOT</b> the only thing people want. Think about this: You get a job offer far away. You'd consider salary, yes — but also: job security, time for family, working atmosphere, learning opportunities, and safety.</div></div>
+    <div class="callout green"><b>Non-material goals people seek:</b><br>Equal treatment &nbsp;·&nbsp; Freedom &nbsp;·&nbsp; Security &nbsp;·&nbsp; Respect from others &nbsp;·&nbsp; No discrimination &nbsp;·&nbsp; Sense of dignity</div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">If women are in paid work, their dignity in the household increases. But for that, there also needs to be <b>respect for women</b> so housework is shared equally. Security, respect, and freedom are not just nice-to-haves — they directly enable better development!</div></div>`,
+    questions:[
+      {q:"Besides income, which of these is also an important developmental goal for people?",opts:["Owning more property and land","Security, freedom, and equal treatment","Getting a foreign degree","Starting a large business"],ans:1,fb:"Well done! Security, freedom, and equal treatment are non-material goals that people value deeply — sometimes even more than income. The NCERT textbook specifically lists these as important development goals."},
+      {q:"A job offers high pay but no job security and leaves no time for family. According to the chapter, this job:",opts:["Is the best job since it pays well","Reduces your sense of security and freedom","Is ideal for national development","Satisfies all developmental goals"],ans:1,fb:"Correct! The NCERT says such a job 'will reduce your sense of security and freedom.' This is a perfect example of why development is about more than just salary."}
+    ]
+  },
+  {
+    num:"03", color:"#FAEEDA", numColor:"#633806",
+    title:"How to compare countries — per capita income",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">How do we decide which country is more developed? We need a common measure — and the most widely used is <b>per capita income</b> = Total income ÷ Total population.</div></div>
+    <div class="callout amber"><b>World Bank classification (2024):</b><br>• High income (rich): ≥ US$ 66,500/year<br>• Low income: ≤ US$ 2,300/year<br>• <b>India: ~US$ 11,000 → lower middle income</b></div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">But there's a major problem with using only averages. Look at this example:</div></div>
+    <div class="data-row">
+      <div class="stat-card hi"><div class="sv">₹10,000</div><div class="sl">Country A average<br>(all 5 citizens earn ~₹10,000 each)</div></div>
+      <div class="stat-card warn"><div class="sv">₹10,000</div><div class="sl">Country B average<br>(4 earn ₹500, 1 earns ₹48,000)</div></div>
+      <div class="stat-card"><div class="sv">Country A</div><div class="sl">Preferred — more equitable, no extreme rich or poor</div></div>
+    </div>
+    <div class="callout"><b>Averages hide inequalities!</b> Per capita income does not tell us how income is distributed among people. This is its biggest limitation.</div>`,
+    questions:[
+      {q:"What is per capita income?",opts:["Total income of only the working population","Total national income divided by total population","Income of only the government","Average income of only urban people"],ans:1,fb:"Perfect! Per capita income = Total national income ÷ Total population. It is the main criterion used by the World Bank to compare and classify countries."},
+      {q:"Country A and Country B have the same average income. But in Country B, four people earn ₹500 and one earns ₹48,000. What does this show?",opts:["Both countries are equally developed","Average income is always a perfect measure","Averages hide inequality — Country A is more equitable and preferable","Country B is more developed because one person is very rich"],ans:2,fb:"Excellent! This is the core lesson on averages. Country A has equitable distribution — nobody is very rich or very poor. Country B has extreme inequality. Most people would prefer Country A. This is why distribution of income matters alongside its size."}
+    ]
+  },
+  {
+    num:"04", color:"#FAECE7", numColor:"#711B13",
+    title:"Kerala vs Haryana — income is not enough",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Haryana has a <b>higher per capita income</b> than Kerala. So by the income criterion, Haryana should be more developed. But is it? Let's check the actual data!</div></div>
+    <div class="data-row">
+      <div class="stat-card hi"><div class="sv">₹3,25,759</div><div class="sl">Haryana per capita (2023-24)</div></div>
+      <div class="stat-card"><div class="sv">₹2,81,001</div><div class="sl">Kerala per capita (2023-24)</div></div>
+      <div class="stat-card warn"><div class="sv">₹60,337</div><div class="sl">Bihar per capita (2023-24)</div></div>
+    </div>
+    <div class="eg-grid">
+      <div class="eg-card"><div class="eg-who">Infant Mortality Rate (2020)</div><div class="eg-want">Kerala: <b>6</b> per 1000<br>Haryana: <b>28</b> per 1000 — 3× worse!</div></div>
+      <div class="eg-card"><div class="eg-who">Literacy Rate (2017-18)</div><div class="eg-want">Kerala: <b>94%</b><br>Haryana: <b>82%</b></div></div>
+      <div class="eg-card"><div class="eg-who">Net Attendance (15-17 yrs)</div><div class="eg-want">Kerala: <b>94%</b><br>Haryana: <b>73%</b></div></div>
+    </div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Despite Haryana being richer, 28 babies die per 1000 in Haryana vs just 6 in Kerala. Why? <b>"Money in your pocket cannot buy all the goods and services that you may need to live well."</b></div></div>
+    <div class="callout green"><b>Kerala's success:</b> Adequate basic healthcare, good schools, effective PDS (Public Distribution System), and strong community participation.</div>`,
+    questions:[
+      {q:"Kerala has lower per capita income than Haryana but a much lower Infant Mortality Rate. What does this prove?",opts:["Per capita income is the only measure needed for development","Income alone is not sufficient — other factors like public facilities matter","Kerala is actually poorer than Haryana in every way","IMR is not an important development indicator"],ans:1,fb:"Spot on! Kerala's IMR of 6 vs Haryana's 28 (despite lower income) conclusively proves that income alone is an inadequate measure of development."},
+      {q:"Why does Kerala have better health and education outcomes than Haryana despite lower income?",opts:["Kerala has better geographical location","Kerala has more industries","Kerala has adequate public healthcare, good schools, and an effective PDS","Kerala receives more foreign investment"],ans:2,fb:"Correct! The NCERT says Kerala has a low IMR because of adequate provision of basic health and educational facilities and a well-functioning PDS. Public services matter — not just individual income."}
+    ]
+  },
+  {
+    num:"05", color:"#EEEDFE", numColor:"#3C3489",
+    title:"Human Development Index (HDI)",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">The <b>UNDP</b> (United Nations Development Programme) created a much better measure called the <b>Human Development Index (HDI)</b>, published in its annual Human Development Report.</div></div>
+    <div class="callout"><b>HDI measures three dimensions:</b><br>1. Per capita income (in PPP dollars)<br>2. Life expectancy at birth (health)<br>3. Mean years of schooling (education)</div>
+    <div class="eg-grid">
+      <div class="eg-card"><div class="eg-who">Sri Lanka 🏆 Best in South Asia</div><div class="eg-want">HDI Rank: <b>89</b> | Life exp: 77.5 yrs | GNI: $12,616</div></div>
+      <div class="eg-card"><div class="eg-who">India</div><div class="eg-want">HDI Rank: <b>130</b> | Life exp: 72 yrs | GNI: $9,047</div></div>
+      <div class="eg-card"><div class="eg-who">Bangladesh</div><div class="eg-want">HDI Rank: <b>130</b> | Life exp: 74.7 yrs | GNI: $8,498 — less than India!</div></div>
+      <div class="eg-card"><div class="eg-who">Pakistan</div><div class="eg-want">HDI Rank: <b>168</b> | Life exp: 67.6 yrs | Schooling: 4.3 yrs</div></div>
+    </div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble"><b>Bangladesh has a lower GNI than India</b> yet beats India on life expectancy (74.7 vs 72 years)! And tiny Sri Lanka ranks 89th while India is 130th. Income alone cannot determine development.</div></div>`,
+    questions:[
+      {q:"The Human Development Report is published by which organisation?",opts:["World Bank","International Monetary Fund (IMF)","UNDP — United Nations Development Programme","Reserve Bank of India"],ans:2,fb:"Correct! The Human Development Report is published by UNDP. India ranks 130th out of 193 countries as per HDR 2025."},
+      {q:"As per Human Development Report 2025 data, which neighbouring country has a better HDI rank than India?",opts:["Pakistan (rank 168)","Nepal (rank 145)","Myanmar (rank 150)","Sri Lanka (rank 89)"],ans:3,fb:"Right! Sri Lanka ranks 89 out of 193 countries — far better than India's rank of 130. It has higher GNI per capita, better life expectancy, and more mean years of schooling."}
+    ]
+  },
+  {
+    num:"06", color:"#EAF3DE", numColor:"#27500A",
+    title:"Sustainability of development",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Final and very important question: <b>can this development last?</b> Will our children and grandchildren also be able to develop?</div></div>
+    <div class="callout amber">"We have not inherited the world from our forefathers — we have <b>borrowed</b> it from our children."</div>
+    <div class="eg-grid">
+      <div class="eg-card"><div class="eg-who">Renewable resources</div><div class="eg-want">Replenished by nature — groundwater, forests, crops. BUT can be overused if we take more than nature can replace!</div></div>
+      <div class="eg-card"><div class="eg-who">Non-renewable resources</div><div class="eg-want">Cannot be replenished — crude oil, coal, natural gas. Once used, gone forever.</div></div>
+    </div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble"><b>Groundwater crisis:</b> About 300 Indian districts have seen water levels fall over 4 metres in 20 years. If this continues, 60% of India will face this crisis in 25 years.<br><br><b>Crude oil:</b> World reserves will last only <b>~47 years</b> at current rates. India imports most of it — rising prices are a burden on our economy.</div></div>
+    <div class="callout green"><b>Key point:</b> Environmental degradation doesn't respect borders. Sustainability is a new field where scientists, economists, and philosophers all work together.</div>`,
+    questions:[
+      {q:"Groundwater is a renewable resource. Yet it is being overused in India. Why is this a problem?",opts:["Because groundwater is not useful for agriculture","Because if extracted faster than it is replenished by rain, it will eventually run out","Because groundwater is too polluted to use","Only non-renewable resources can be overused"],ans:1,fb:"Excellent! Even though groundwater is renewable, if we extract it faster than rain can replenish it, we effectively overuse it. About 300 Indian districts have already seen water levels drop over 4 metres in 20 years."},
+      {q:"At current extraction rates, world crude oil reserves will last approximately:",opts:["10 years","25 years","47 years","100 years"],ans:2,fb:"Correct! As per the Energy Institute data cited in NCERT, world crude oil reserves will last approximately 47 years at current rates. This is why sustainable development and switching to renewable energy is urgently needed."}
+    ]
+  }
+];
+
+var current = 0;
+var quizState = {};
+var scores = {};
+
+function totalAnswered(){ return Object.keys(quizState).length; }
+function totalCorrect(){ return Object.values(scores).reduce(function(a,b){return a+b;},0); }
+
+function renderClass() {
+  var app = document.getElementById('cls-app');
+  if (!app) return;
+  if (current >= lessons.length) { app.innerHTML = finalScreen(); return; }
+  var l = lessons[current];
+  var qs = l.questions;
+  var quizHtml = '';
+  qs.forEach(function(q, qi) {
+    var key = current + '-' + qi;
+    var sel = quizState[key];
+    var optsHtml = q.opts.map(function(o, oi) {
+      var cls = 'opt-btn';
+      if (sel !== undefined) {
+        if (oi === q.ans) cls += ' correct';
+        else if (oi === sel && sel !== q.ans) cls += ' wrong';
+      }
+      return '<button class="' + cls + '" ' + (sel !== undefined ? 'disabled' : '') + ' onclick="pick(' + current + ',' + qi + ',' + oi + ')">' +
+        '<span class="opt-letter">' + String.fromCharCode(65 + oi) + '</span>' + o + '</button>';
+    }).join('');
+    var fbCls = 'feedback';
+    var fbContent = '';
+    if (sel !== undefined) {
+      fbCls += ' show ' + (sel === q.ans ? 'good' : 'bad');
+      fbContent = (sel === q.ans
+        ? '<i class="ti ti-circle-check" style="font-size:15px;vertical-align:-2px;margin-right:5px"></i>'
+        : '<i class="ti ti-circle-x" style="font-size:15px;vertical-align:-2px;margin-right:5px"></i>') + q.fb;
+    }
+    quizHtml += '<div class="q-block"><div class="q-text">' + (qi+1) + '. ' + q.q + '</div><div class="options">' + optsHtml + '</div><div class="' + fbCls + '">' + fbContent + '</div></div>';
+  });
+  var allAnswered = qs.every(function(_,qi){ return quizState[current+'-'+qi] !== undefined; });
+  var dots = lessons.map(function(_,i){ return '<div class="dot ' + (i < current ? 'done' : i === current ? 'active' : '') + '"></div>'; }).join('');
+  app.innerHTML =
+    '<div class="topbar"><div class="topbar-left"><div class="t-avatar"><i class="ti ti-school"></i></div><div><div class="topbar-title">Chapter 1 — Development</div><div class="topbar-sub">Class 10 Economics · NCERT 2026-27</div></div></div>' +
+    '<div class="prog-row"><div class="prog-dots">' + dots + '</div><div class="prog-label">Lesson ' + (current+1) + ' of ' + lessons.length + '</div></div></div>' +
+    '<div class="card"><div class="card-head"><span class="lnum" style="background:' + l.color + ';color:' + l.numColor + '">' + l.num + '</span><span class="card-title">' + l.title + '</span></div>' +
+    '<div class="card-body">' + l.content + '</div>' +
+    '<div class="quiz-section"><div class="quiz-label"><i class="ti ti-pencil" style="font-size:14px"></i> Check your understanding</div>' + quizHtml + '</div>' +
+    '<div class="nav-row">' +
+    '<button class="nav-btn" onclick="goLesson(-1)" ' + (current===0?'disabled':'') + '><i class="ti ti-arrow-left"></i> Previous</button>' +
+    '<span class="score-badge">Score: ' + totalCorrect() + ' / ' + totalAnswered() + '</span>' +
+    '<button class="nav-btn primary" onclick="goLesson(1)" ' + (!allAnswered?'disabled':'') + '>' + (current===lessons.length-1?'Finish class':'Next lesson') + ' <i class="ti ti-arrow-right"></i></button>' +
+    '</div></div>';
+}
+
+function finalScreen() {
+  var tot = lessons.reduce(function(a,l){ return a + l.questions.length; }, 0);
+  var cor = totalCorrect();
+  var pct = Math.round((cor/tot)*100);
+  var msg = pct >= 90 ? "Outstanding! You've mastered this chapter completely." :
+            pct >= 75 ? "Excellent work! You have a very strong grasp of Chapter 1." :
+            pct >= 60 ? "Good effort! Review lessons where you got answers wrong." :
+            "Keep revising! Go back through each lesson carefully — you'll get it!";
+  var emoji = pct >= 75 ? "🎉" : pct >= 60 ? "👍" : "📖";
+  return '<div class="topbar"><div class="topbar-left"><div class="t-avatar"><i class="ti ti-school"></i></div><div><div class="topbar-title">Chapter 1 — Development</div><div class="topbar-sub">Class complete!</div></div></div></div>' +
+    '<div class="final-card"><div style="font-size:36px;margin-bottom:.5rem">' + emoji + '</div>' +
+    '<div class="score-ring"><div class="sr-num">' + cor + '/' + tot + '</div><div class="sr-sub">correct</div></div>' +
+    '<h2>Class complete!</h2><p>' + msg + '<br><br><strong>Topics covered:</strong> What is development · Income and other goals · Per capita income &amp; World Bank · Kerala vs Haryana · HDI · Sustainability of development</p>' +
+    '<button class="restart-btn" onclick="restartClass()"><i class="ti ti-refresh"></i> Restart class</button></div>';
+}
+
+function pick(lessonIdx, qi, oi) {
+  var key = lessonIdx + '-' + qi;
+  if (quizState[key] !== undefined) return;
+  quizState[key] = oi;
+  if (oi === lessons[lessonIdx].questions[qi].ans) scores[key] = 1;
+  renderClass();
+}
+
+function goLesson(dir) {
+  current = Math.max(0, Math.min(lessons.length, current + dir));
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  renderClass();
+}
+
+function restartClass() {
+  current = 0; quizState = {}; scores = {};
+  renderClass();
+}
+
+renderClass();
+</script>
+</body>
+</html>

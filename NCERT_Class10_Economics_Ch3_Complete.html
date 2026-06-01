@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 10 Economics | Chapter 3: Money and Credit | Complete Study Material</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg-primary:#ffffff;--bg-secondary:#f5f5f3;--bg-tertiary:#eeede8;
+  --bg-info:#e6f1fb;--bg-success:#eaf3de;--bg-warning:#faeeda;--bg-danger:#fcebeb;
+  --text-primary:#1a1a18;--text-secondary:#5f5e5a;
+  --text-success:#27500A;--text-danger:#791F1F;--text-info:#0C447C;--text-warning:#633806;
+  --border:rgba(0,0,0,0.12);--border-md:rgba(0,0,0,0.22);
+  --r-md:8px;--r-lg:12px;--r-xl:16px;
+  --accent:#185FA5;--accent2:#0f6e56;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg-primary:#1e1e1c;--bg-secondary:#2a2a28;--bg-tertiary:#252523;
+    --bg-info:#0c2a44;--bg-success:#162808;--bg-warning:#2e1c04;--bg-danger:#2c0f0f;
+    --text-primary:#e8e7e2;--text-secondary:#a0a09a;
+    --text-success:#C0DD97;--text-danger:#F09595;--text-info:#85B7EB;--text-warning:#FAC775;
+    --border:rgba(255,255,255,0.1);--border-md:rgba(255,255,255,0.2);
+    --accent:#85B7EB;--accent2:#5DCAA5;
+  }
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg-tertiary);color:var(--text-primary);min-height:100vh;padding:2rem 1rem}
+.wrap{max-width:820px;margin:0 auto}
+
+.hero{background:linear-gradient(135deg,#1a3050 0%,#185FA5 60%,#0e4a7a 100%);padding:2.5rem 2rem 2rem;border-radius:var(--r-xl);margin-bottom:1.5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.05)}
+.hero::after{content:'';position:absolute;bottom:-60px;left:20%;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,0.04)}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.15);color:#fff;font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:.75rem;letter-spacing:.8px;text-transform:uppercase}
+.hero h1{font-size:26px;font-weight:600;color:#fff;line-height:1.2;margin-bottom:.5rem}
+.hero p{color:rgba(255,255,255,0.75);font-size:13px}
+.hero-stats{display:flex;gap:1.2rem;margin-top:1.25rem;flex-wrap:wrap}
+.hero-stat{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,0.85);font-size:12px}
+
+.tab-bar{display:flex;gap:4px;background:var(--bg-secondary);padding:4px;border-radius:var(--r-lg);margin-bottom:1.25rem;flex-wrap:wrap}
+.tab-btn{flex:1;min-width:75px;padding:9px 8px;border:none;background:transparent;border-radius:var(--r-md);font-size:11.5px;font-weight:500;color:var(--text-secondary);cursor:pointer;transition:all .2s;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:4px;font-family:inherit}
+.tab-btn.active{background:var(--bg-primary);color:var(--text-primary);border:.5px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.tab-btn:hover:not(.active){background:var(--bg-primary);opacity:.7}
+.section{display:none}.section.active{display:block}
+
+.card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:1rem}
+.card-head{padding:14px 18px;border-bottom:.5px solid var(--border);display:flex;align-items:center;gap:10px}
+.card-body{padding:18px}
+.lnum{font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px}
+.card-title{font-size:15px;font-weight:500;color:var(--text-primary)}
+
+.t-bubble{display:flex;gap:10px;margin-bottom:14px}
+.t-icon{width:30px;height:30px;border-radius:50%;background:#185FA5;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;flex-shrink:0;margin-top:2px}
+.bubble{background:var(--bg-secondary);border-radius:0 var(--r-lg) var(--r-lg) var(--r-lg);padding:10px 15px;font-size:13.5px;line-height:1.75;color:var(--text-primary);flex:1}
+
+.callout{border-left:3px solid #185FA5;background:var(--bg-info);border-radius:0 var(--r-md) var(--r-md) 0;padding:10px 14px;margin:10px 0;font-size:13px;line-height:1.65;color:var(--text-primary)}
+.callout.green{border-color:#0f6e56;background:var(--bg-success)}
+.callout.amber{border-color:#BA7517;background:var(--bg-warning)}
+.callout.red{border-color:#993C1D;background:var(--bg-danger)}
+
+.eg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:10px 0}
+.eg-card{background:var(--bg-secondary);border:.5px solid var(--border);border-radius:var(--r-md);padding:10px 12px}
+.eg-card .eg-who{font-size:11px;font-weight:600;color:var(--text-secondary);margin-bottom:5px}
+.eg-card .eg-want{font-size:12.5px;color:var(--text-primary);line-height:1.5}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.data-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.stat-card{background:var(--bg-secondary);border-radius:var(--r-md);padding:12px;text-align:center}
+.stat-card .sv{font-size:16px;font-weight:500;color:var(--text-primary)}
+.stat-card .sl{font-size:11px;color:var(--text-secondary);margin-top:4px;line-height:1.4}
+.stat-card.hi .sv{color:#0C447C}.stat-card.warn .sv{color:#993C1D}.stat-card.gr .sv{color:#27500A}
+
+.quiz-section{border-top:.5px solid var(--border);padding:16px 18px;background:var(--bg-secondary)}
+.quiz-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-secondary);margin-bottom:14px;display:flex;align-items:center;gap:5px}
+.q-block{margin-bottom:20px}.q-block:last-child{margin-bottom:0}
+.q-text{font-size:13.5px;font-weight:500;color:var(--text-primary);margin-bottom:10px;line-height:1.55}
+.options{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.opt-btn{text-align:left;background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-md);padding:9px 13px;font-size:13px;color:var(--text-primary);cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:8px;font-family:inherit;width:100%}
+.opt-btn:hover:not(:disabled){border-color:var(--border-md);background:var(--bg-secondary)}
+.opt-btn.correct{background:var(--bg-success);border-color:#3B6D11;color:#27500A}
+.opt-btn.wrong{background:var(--bg-danger);border-color:#A32D2D;color:#791F1F}
+.opt-btn:disabled{cursor:default}
+.opt-letter{width:22px;height:22px;border-radius:50%;background:var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;flex-shrink:0}
+.feedback{font-size:12.5px;line-height:1.6;padding:9px 13px;border-radius:var(--r-md);display:none}
+.feedback.show{display:block}
+.feedback.good{background:var(--bg-success);color:var(--text-success)}
+.feedback.bad{background:var(--bg-danger);color:var(--text-danger)}
+
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-top:.5px solid var(--border);background:var(--bg-primary)}
+.nav-btn{display:flex;align-items:center;gap:5px;font-size:13px;font-weight:500;padding:8px 16px;border-radius:var(--r-md);border:.5px solid var(--border-md);background:transparent;color:var(--text-primary);cursor:pointer;transition:all .15s;font-family:inherit}
+.nav-btn:hover:not(:disabled){background:var(--bg-secondary)}
+.nav-btn.primary{background:#185FA5;color:#fff;border-color:#185FA5}
+.nav-btn.primary:hover:not(:disabled){background:#0d4a84}
+.nav-btn:disabled{opacity:.35;cursor:default}
+.score-badge{font-size:12px;color:var(--text-secondary)}
+
+.topbar{background:var(--bg-secondary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:14px 18px;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar-left{display:flex;align-items:center;gap:10px}
+.t-avatar{width:40px;height:40px;border-radius:50%;background:#185FA5;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;flex-shrink:0}
+.topbar-title{font-size:14px;font-weight:500;color:var(--text-primary)}
+.topbar-sub{font-size:11px;color:var(--text-secondary);margin-top:2px}
+.prog-row{display:flex;align-items:center;gap:8px}
+.prog-dots{display:flex;gap:5px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--border-md);transition:background .3s}
+.dot.done{background:#185FA5}.dot.active{background:#0f6e56}
+.prog-label{font-size:11px;color:var(--text-secondary)}
+
+.final-card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:2.5rem 2rem;text-align:center}
+.final-card h2{font-size:22px;font-weight:500;color:var(--text-primary);margin-bottom:10px}
+.final-card p{font-size:13.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:1.5rem}
+.score-ring{width:90px;height:90px;border-radius:50%;background:var(--bg-success);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1.25rem}
+.score-ring .sr-num{font-size:24px;font-weight:500;color:#27500A}
+.score-ring .sr-sub{font-size:10px;color:#3B6D11}
+.restart-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:9px 20px;border-radius:var(--r-md);border:.5px solid var(--border-md);background:transparent;color:var(--text-primary);cursor:pointer;font-family:inherit;transition:background .15s}
+.restart-btn:hover{background:var(--bg-secondary)}
+
+.q-section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-secondary);margin:1.5rem 0 .75rem;display:flex;align-items:center;gap:6px}
+.q-section-title::after{content:'';flex:1;height:.5px;background:var(--border)}
+.qa-card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);margin-bottom:.75rem;overflow:hidden}
+.qa-question{display:flex;align-items:flex-start;gap:10px;padding:1rem 1.25rem;cursor:pointer;user-select:none}
+.qa-question:hover{background:var(--bg-secondary)}
+.q-num{min-width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0;margin-top:1px}
+.q-txt{font-size:13.5px;font-weight:500;color:var(--text-primary);flex:1;line-height:1.55}
+.qa-answer{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.qa-answer.open{max-height:1400px}
+.qa-inner{padding:.9rem 1.25rem 1.25rem 3rem;border-top:.5px solid var(--border)}
+.qa-inner p{font-size:13.5px;line-height:1.75;color:var(--text-primary);margin-bottom:.6rem}
+.qa-inner ul{padding-left:1.2rem;margin-bottom:.6rem}
+.qa-inner li{font-size:13.5px;line-height:1.7;color:var(--text-primary);margin-bottom:5px}
+.ans-badge{display:inline-block;font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:10px;letter-spacing:.4px}
+.mcq-correct{display:inline-flex;align-items:center;gap:5px;background:var(--bg-success);color:var(--text-success);font-size:12px;font-weight:600;padding:5px 12px;border-radius:var(--r-md);margin-top:6px;margin-bottom:8px}
+.chev{transition:transform .3s;font-size:16px;color:var(--text-secondary);flex-shrink:0}
+.chev.open{transform:rotate(180deg)}
+
+.tbl-wrap{overflow-x:auto;margin:.75rem 0}
+table.dtbl{width:100%;border-collapse:collapse;font-size:13px;min-width:320px}
+table.dtbl th{background:var(--bg-secondary);color:var(--text-secondary);font-weight:600;padding:9px 12px;text-align:left;border-bottom:.5px solid var(--border-md);white-space:nowrap}
+table.dtbl td{padding:9px 12px;border-bottom:.5px solid var(--border);color:var(--text-primary)}
+table.dtbl tr:last-child td{border-bottom:none}
+table.dtbl tr:hover td{background:var(--bg-secondary)}
+
+.concept-card{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:1.25rem;margin-bottom:1rem;cursor:pointer;transition:border-color .2s}
+.concept-card:hover{border-color:var(--border-md)}
+.concept-card.static{cursor:default}
+.c-head{display:flex;align-items:center;justify-content:space-between}
+.c-title-row{display:flex;align-items:center;gap:12px}
+.c-icon{width:38px;height:38px;border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.c-card-title{font-size:14px;font-weight:500;color:var(--text-primary)}
+.c-sub{font-size:12px;color:var(--text-secondary);margin-top:2px}
+.c-body{max-height:0;overflow:hidden;transition:max-height .4s ease,padding-top .2s}
+.c-body.open{max-height:900px;padding-top:1rem}
+.c-body p{font-size:13.5px;line-height:1.75;color:var(--text-primary);margin-bottom:.75rem}
+.c-body ul{padding-left:1.2rem;margin-bottom:.75rem}
+.c-body li{font-size:13.5px;line-height:1.7;color:var(--text-primary);margin-bottom:4px}
+
+.terms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:1rem}
+.term-card{background:var(--bg-secondary);border-radius:var(--r-md);padding:.85rem 1rem;border:.5px solid var(--border)}
+.term-card h4{font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:5px}
+.term-card p{font-size:12px;color:var(--text-secondary);line-height:1.55}
+
+.facts-wrap{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-lg);padding:1.25rem}
+.facts-wrap li{font-size:13.5px;color:var(--text-primary);margin-bottom:10px;line-height:1.65;padding-left:1rem;position:relative;list-style:none}
+.facts-wrap li::before{content:'★';position:absolute;left:0;font-size:10px;color:#BA7517;top:3px}
+
+.mindmap{background:var(--bg-secondary);border-radius:var(--r-lg);padding:1.5rem;margin-bottom:1rem;border:.5px solid var(--border)}
+.mindmap h3{font-size:14px;font-weight:500;color:var(--text-primary);margin-bottom:1rem;text-align:center}
+.mm-center{background:#185FA5;color:#fff;font-size:14px;font-weight:500;padding:10px 24px;border-radius:24px;display:block;text-align:center;width:fit-content;margin:0 auto 1.25rem}
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.branch{background:var(--bg-primary);border:.5px solid var(--border);border-radius:var(--r-md);padding:12px}
+.branch .bt{font-size:12px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:5px}
+.branch ul{list-style:none}
+.branch ul li{font-size:11.5px;color:var(--text-secondary);padding:2px 0;display:flex;align-items:flex-start;gap:4px}
+.branch ul li::before{content:'→';font-size:10px;flex-shrink:0;margin-top:2px;color:var(--text-secondary)}
+
+.story-box{background:var(--bg-secondary);border:.5px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:10px 0;font-size:13px;line-height:1.7;color:var(--text-primary)}
+.story-box .sb-title{font-size:12px;font-weight:600;margin-bottom:6px;color:var(--text-secondary)}
+
+@media(max-width:560px){
+  .data-row,.two-col{grid-template-columns:1fr}
+  .hero h1{font-size:20px}
+  .tab-btn{font-size:10px;padding:7px 5px}
+  .qa-inner{padding-left:1.25rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="hero-badge">Class 10 · Economics · NCERT 2026-27</div>
+  <h1>Chapter 3: Money and Credit</h1>
+  <p>Understanding Economic Development — Complete interactive study material with all questions answered</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><i class="ti ti-chalkboard" aria-hidden="true"></i> Interactive Class</div>
+    <div class="hero-stat"><i class="ti ti-message-circle" aria-hidden="true"></i> In-text Q&amp;A</div>
+    <div class="hero-stat"><i class="ti ti-pencil" aria-hidden="true"></i> 13 Exercises</div>
+    <div class="hero-stat"><i class="ti ti-table" aria-hidden="true"></i> Data &amp; Tables</div>
+    <div class="hero-stat"><i class="ti ti-bookmark" aria-hidden="true"></i> Key Terms</div>
+  </div>
+</div>
+
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('class',this)"><i class="ti ti-chalkboard" aria-hidden="true"></i> Class</button>
+  <button class="tab-btn" onclick="switchTab('overview',this)"><i class="ti ti-map-2" aria-hidden="true"></i> Overview</button>
+  <button class="tab-btn" onclick="switchTab('intext',this)"><i class="ti ti-message-circle" aria-hidden="true"></i> In-text Q&amp;A</button>
+  <button class="tab-btn" onclick="switchTab('exercises',this)"><i class="ti ti-pencil" aria-hidden="true"></i> Exercises</button>
+  <button class="tab-btn" onclick="switchTab('data',this)"><i class="ti ti-table" aria-hidden="true"></i> Data &amp; Tables</button>
+  <button class="tab-btn" onclick="switchTab('terms',this)"><i class="ti ti-bookmark" aria-hidden="true"></i> Key Terms</button>
+</div>
+
+<!-- ===================== CLASS TAB ===================== -->
+<div id="tab-class" class="section active">
+  <div id="cls-app"></div>
+</div>
+
+<!-- ===================== OVERVIEW TAB ===================== -->
+<div id="tab-overview" class="section">
+  <div class="mindmap">
+    <h3>Chapter at a glance</h3>
+    <div class="mm-center">Money and Credit</div>
+    <div class="branches">
+      <div class="branch"><div class="bt" style="color:#185FA5">💰 Money</div><ul><li>Barter → double coincidence</li><li>Medium of exchange</li><li>Currency (RBI)</li><li>Demand deposits &amp; cheques</li></ul></div>
+      <div class="branch"><div class="bt" style="color:#0f6e56">🏦 Banking</div><ul><li>Loan activities of banks</li><li>5% cash reserve</li><li>Depositors ↔ Borrowers</li><li>RBI supervision</li></ul></div>
+      <div class="branch"><div class="bt" style="color:#993C1D">📋 Credit</div><ul><li>Terms of credit</li><li>Collateral</li><li>Salim vs Swapna</li><li>Debt trap</li></ul></div>
+      <div class="branch"><div class="bt" style="color:#BA7517">🤝 Sources of Credit</div><ul><li>Formal: banks, cooperatives</li><li>Informal: moneylenders, traders</li><li>SHGs for the poor</li><li>Grameen Bank</li></ul></div>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#e6f1fb;color:#185FA5"><i class="ti ti-arrows-exchange" aria-hidden="true"></i></div><div><div class="c-card-title">Money as a Medium of Exchange</div><div class="c-sub">Solving the barter problem</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p>In a barter system, goods are directly exchanged without money. This requires <strong>double coincidence of wants</strong> — what you want to sell is exactly what the other person wants to buy, AND vice versa. This is extremely difficult to arrange.</p>
+      <div class="callout">Money eliminates double coincidence of wants by acting as an intermediate step. A shoe manufacturer sells shoes for money, then uses that money to buy wheat — without needing to find a wheat farmer who also wants shoes.</div>
+      <p><strong>Modern forms of money:</strong> Currency (paper notes and coins) issued by RBI on behalf of the central government. Modern currency has no intrinsic value — it is accepted because it is authorised by law. No one in India can legally refuse a payment in rupees.</p>
+      <p><strong>Demand deposits:</strong> Money deposited in bank accounts. Can be withdrawn on demand. Cheques allow direct settlement of payments without cash — so demand deposits also function as money.</p>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#eaf3de;color:#3B6D11"><i class="ti ti-building-bank" aria-hidden="true"></i></div><div><div class="c-card-title">Loan Activities of Banks</div><div class="c-sub">How banks mediate between depositors and borrowers</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p>Banks accept deposits from the public and pay interest on them. They keep only a small proportion (~5% in India) as cash reserve and use the major portion to extend loans.</p>
+      <div class="callout green">Banks mediate between depositors (surplus funds) and borrowers (need funds). They charge a <strong>higher interest rate on loans</strong> than they offer on deposits — this difference is their main source of income.</div>
+      <p>The <strong>Reserve Bank of India (RBI)</strong> supervises all formal sector lending — ensuring banks maintain cash balance, lending to priority sectors, and submitting periodic reports.</p>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#faeeda;color:#BA7517"><i class="ti ti-file-invoice" aria-hidden="true"></i></div><div><div class="c-card-title">Terms of Credit &amp; Two Credit Situations</div><div class="c-sub">Salim (positive) vs Swapna (debt trap)</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p><strong>Terms of credit</strong> = Interest rate + Collateral &amp; documentation requirements + Mode of repayment</p>
+      <p><strong>Collateral</strong> = Asset owned by borrower (land, building, vehicle, livestock, bank deposits) used as guarantee. If loan is not repaid, lender can sell the collateral.</p>
+      <div class="callout amber"><strong>Salim (positive credit):</strong> Got a loan to meet working capital needs → delivered order on time → made profit → repaid loan. Credit helped increase earnings.<br><br><strong>Swapna (debt trap):</strong> Crop failed → couldn't repay moneylender → debt grew → had to sell part of land. Credit pushed her into a debt trap.</div>
+      <p>Whether credit is helpful or harmful depends on the <strong>risks in the situation</strong> and whether there is support in case of loss.</p>
+    </div>
+  </div>
+
+  <div class="concept-card" onclick="toggleC(this)">
+    <div class="c-head"><div class="c-title-row"><div class="c-icon" style="background:#faece7;color:#993C1D"><i class="ti ti-users-group" aria-hidden="true"></i></div><div><div class="c-card-title">Formal vs Informal Credit &amp; SHGs</div><div class="c-sub">Who gets what and why the poor are excluded</div></div></div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="c-body">
+      <p><strong>Formal sector:</strong> Banks and cooperatives — supervised by RBI, lower interest rates. <strong>Informal sector:</strong> Moneylenders, traders, employers, relatives — no supervision, very high interest rates.</p>
+      <p>As of 2019: Commercial banks provide 51% of rural credit. Moneylenders provide 23%. The poor depend more on informal sources (54% of poor households' loans from informal sources vs only 17% for rich households).</p>
+      <div class="callout"><strong>Self-Help Groups (SHGs):</strong> 15-20 members (mainly women) pool savings (₹25-100/month), lend to members at reasonable rates, and after 1-2 years become eligible for bank loans as a group. Overcomes the collateral problem. Promotes financial self-reliance and addresses social issues (health, nutrition, domestic violence).</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== IN-TEXT Q&A TAB ===================== -->
+<div id="tab-intext" class="section">
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Money as Medium of Exchange (pg 40)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">1</div><div class="q-txt">How does the use of money make it easier to exchange things?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p>Money makes exchange easier by eliminating the need for <strong>double coincidence of wants</strong> — the major problem with barter.</p>
+      <p>In a barter system, a shoe manufacturer who wants wheat must find a wheat farmer who not only wants to sell wheat but also wants to buy shoes. This simultaneous matching is very difficult to arrange.</p>
+      <p>With money, the shoe manufacturer simply: (1) sells shoes to anyone who wants them, receiving money; and (2) uses that money to buy wheat from any wheat seller. Money acts as a <strong>medium of exchange</strong> — an intermediate step that separates the two transactions and makes them independent of each other.</p>
+      <p>Everyone prefers to receive payments in money because money can be exchanged for any commodity or service — it has universal acceptability.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">2</div><div class="q-txt">Can you think of some examples of goods/services being exchanged or wages being paid through barter?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <ul>
+        <li><strong>Agricultural labour paid in grain:</strong> In some villages, agricultural labourers are paid in kind — they receive a share of the crop (wheat, rice) instead of cash wages.</li>
+        <li><strong>Doctor treated in exchange for food:</strong> A village doctor may treat a patient and receive food items or vegetables in return.</li>
+        <li><strong>Carpenter-farmer exchange:</strong> A carpenter builds furniture for a farmer and receives grain in return.</li>
+        <li><strong>Skill exchange:</strong> A teacher tutors a carpenter's children; the carpenter makes furniture for the teacher — no money changes hands.</li>
+        <li><strong>Online barter platforms:</strong> Modern websites exist where people exchange goods/services directly — old books for clothes, photography skills for cooking lessons, etc.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Cheques & Demand Deposits (pg 42)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">1</div><div class="q-txt">M. Salim wants to withdraw ₹20,000 in cash. How would he write a cheque to withdraw money?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p>To withdraw cash using a cheque, Salim would write a <strong>self-cheque</strong> (a cheque drawn in his own name or marked "Self") with the following details:</p>
+      <ul>
+        <li><strong>Payee:</strong> "Self" or his own name (M. Salim)</li>
+        <li><strong>Amount in figures:</strong> ₹20,000/-</li>
+        <li><strong>Amount in words:</strong> "Twenty Thousand Rupees Only"</li>
+        <li><strong>Date:</strong> Current date</li>
+        <li><strong>Signature:</strong> His authorised signature</li>
+        <li><strong>Account number:</strong> His bank account number</li>
+      </ul>
+      <p>He would then present this cheque at his bank branch or at the bank's counter. The bank will verify his identity and signature, and pay him ₹20,000 in cash, debiting his account.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">2</div><div class="q-txt">After the transaction between Salim and Prem, which is correct? (i) Both balances increase (ii) Salim's decreases, Prem's increases (iii) Salim's increases, Prem's decreases</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> Correct answer: (ii) Salim's balance decreases and Prem's balance increases</div>
+      <p>When Salim writes a cheque to pay Prem (the leather supplier), Salim instructs his bank to pay a specific amount to Prem. This amount is <strong>debited</strong> (subtracted) from Salim's account and <strong>credited</strong> (added) to Prem's account. Total money in the system remains the same — it just moves from one account to another.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">3</div><div class="q-txt">Why are demand deposits considered as money?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p>Demand deposits are considered money because they share the essential features of money:</p>
+      <ul>
+        <li><strong>Medium of exchange:</strong> Payments can be made directly through cheques drawn against demand deposits — without the use of cash.</li>
+        <li><strong>Withdrawable on demand:</strong> Unlike fixed deposits, demand deposits can be withdrawn at any time, making them as liquid as cash.</li>
+        <li><strong>Widely accepted:</strong> Cheques against demand deposits are accepted as a means of payment by businesses, individuals, and institutions.</li>
+        <li><strong>No cash needed:</strong> The cheque payment between Salim and Prem was completed without any actual transfer of cash — just an entry in two bank accounts.</li>
+      </ul>
+      <p>Since demand deposits along with currency constitute the modern forms of money, they are closely linked to the working of the modern banking system.</p>
+    </div></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Two Credit Situations (pg 44)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faeeda;color:#633806">1</div><div class="q-txt">Fill the table comparing Salim and Swapna — why they needed credit, what was the risk, and what was the outcome.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faeeda;color:#633806">Answer</div>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>Aspect</th><th>Salim (Shoe Manufacturer)</th><th>Swapna (Small Farmer)</th></tr>
+        <tr><td>Why did they need credit?</td><td>To meet working capital needs — hire workers, buy raw materials to complete a large order of 3,000 pairs of shoes</td><td>To meet expenses of cultivation — seeds, fertilisers, pesticides for her groundnut crop</td></tr>
+        <tr><td>What was the risk?</td><td>Risk of not completing the order on time and losing the contract/advance payment</td><td>Risk of crop failure due to pests, drought, or disease — making loan repayment impossible</td></tr>
+        <tr><td>What was the outcome?</td><td>Positive — delivered order, made profit, repaid loan. Credit increased his earnings.</td><td>Negative — crop failed, couldn't repay, debt grew, had to sell part of land. Credit pushed her into a debt trap.</td></tr>
+      </table></div>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faeeda;color:#633806">2</div><div class="q-txt">Supposing Salim continues to get orders from traders. What would be his position after 6 years?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faeeda;color:#633806">Answer</div>
+      <p>If Salim continues to get regular orders from traders, his position after 6 years would be very good:</p>
+      <ul>
+        <li>He would have a steady, growing business with regular income from shoe manufacturing.</li>
+        <li>He would repay each loan promptly after fulfilling each order, building a good credit history.</li>
+        <li>His credit worthiness would improve — banks and suppliers would be more willing to give him larger credit at better terms.</li>
+        <li>He could expand his business — hire more workers, buy machinery, take on larger orders.</li>
+        <li>His savings and assets would grow, providing a financial cushion for any future uncertainties.</li>
+      </ul>
+      <p>This shows how productive credit, when backed by stable income and manageable risk, is a powerful tool for economic growth.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faeeda;color:#633806">3</div><div class="q-txt">What are the reasons that make Swapna's situation so risky? Discuss — pesticides, role of moneylenders, climate.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faeeda;color:#633806">Answer</div>
+      <ul>
+        <li><strong>Climate risk:</strong> Rain-fed agriculture is highly vulnerable to drought, floods, and irregular monsoons. Swapna's crop failed due to pests — any natural calamity can wipe out the entire crop and income, leaving her unable to repay.</li>
+        <li><strong>Role of moneylenders:</strong> Moneylenders charge extremely high interest rates (often 5% per month = 60% per year). When Swapna cannot repay, the debt compounds rapidly into a much larger amount. Moneylenders may harass poor borrowers and have no legal oversight.</li>
+        <li><strong>Pesticides:</strong> Even after spending on expensive pesticides, the crop was not saved — adding to costs without salvaging the harvest. This shows that investments in inputs don't always guarantee returns in farming.</li>
+        <li><strong>Lack of collateral:</strong> Small farmers have limited assets. When in a debt trap, they may have to sell land — their only productive asset — to repay, leaving them even poorer and unable to farm independently in future.</li>
+        <li><strong>No safety net:</strong> There is no crop insurance or government support for Swapna. Without such support, any crop failure becomes financially catastrophic.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Terms of Credit / House Loan (pg 45)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">1</div><div class="q-txt">Fill the details of Megha's housing loan.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>Detail</th><th>Megha's Housing Loan</th></tr>
+        <tr><td>Loan amount</td><td>₹5,00,000 (Rs 5 lakhs)</td></tr>
+        <tr><td>Duration of loan</td><td>10 years</td></tr>
+        <tr><td>Documents required</td><td>Employment records and salary documents</td></tr>
+        <tr><td>Interest rate</td><td>12% per annum</td></tr>
+        <tr><td>Mode of repayment</td><td>Monthly instalments (EMI) over 10 years</td></tr>
+        <tr><td>Collateral</td><td>Papers (title documents) of the new house — returned only when the entire loan with interest is repaid</td></tr>
+      </table></div>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">1</div><div class="q-txt">Why do lenders ask for collateral while lending?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>Lenders ask for collateral as a <strong>security/guarantee</strong> against the risk of loan default. The reasons are:</p>
+      <ul>
+        <li><strong>Protection against default:</strong> If the borrower fails to repay, the lender has the legal right to sell the collateral asset to recover the outstanding loan amount.</li>
+        <li><strong>Ensures commitment:</strong> Pledging an important asset (like land or house) gives the borrower a strong incentive to repay — they risk losing the asset if they don't.</li>
+        <li><strong>Risk assessment:</strong> Collateral provides the lender with some assurance about the borrower's creditworthiness and ability to repay.</li>
+        <li><strong>Bank security regulations:</strong> Banks are required by RBI to maintain standards — collateral ensures loans are backed by real assets.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">2</div><div class="q-txt">Given that a large number of people in our country are poor, does it affect their capacity to borrow?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>Yes, poverty severely limits people's capacity to borrow from formal sources.</strong></p>
+      <ul>
+        <li><strong>No collateral:</strong> The poor have few assets to offer as security. Banks require collateral — which the poor typically lack — making it impossible to get formal bank loans.</li>
+        <li><strong>No documentation:</strong> Poor workers often lack formal employment records, salary slips, or income proof that banks require.</li>
+        <li><strong>No credit history:</strong> Without prior banking relationships, the poor cannot demonstrate creditworthiness.</li>
+        <li><strong>Forced into informal sector:</strong> Unable to access bank loans, the poor must borrow from moneylenders at very high interest rates — often leading to debt traps.</li>
+      </ul>
+      <p>This is a vicious cycle: poverty prevents access to cheap formal credit → informal credit with high interest makes the poor poorer → which perpetuates poverty. Breaking this cycle requires innovative solutions like SHGs and expanding formal credit to rural areas.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">3</div><div class="q-txt">Fill in the blanks: Borrowers look for easy terms — ___ (low/high) interest rate, ___ (easy/tough) repayment conditions, ___ (less/more) collateral and documentation.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> Answers: low interest rate, easy conditions for repayment, less collateral and documentation requirements</div>
+      <p>Borrowers naturally want the most favourable terms — minimum cost (low interest), maximum flexibility (easy repayment), and minimum risk (less collateral to pledge). This is why formal sector loans from banks and cooperatives are so much more desirable than informal sector loans which typically have high interest, harsh repayment terms, and risk of harassment.</p>
+    </div></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Variety of Credit Arrangements (pg 47)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">1</div><div class="q-txt">List the various sources of credit in Sonpur.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <ul>
+        <li><strong>Village moneylender</strong> — Shyamal borrowed at 5% per month (60% p.a.)</li>
+        <li><strong>Agricultural trader</strong> — Shyamal now borrows at 3% per month; supplies inputs on credit but forces farmers to sell crop to him</li>
+        <li><strong>Commercial bank</strong> — Arun (medium farmer, 7 acres) borrows at 8.5% per annum; requires collateral and documents</li>
+        <li><strong>Landowner-employer</strong> — Rama (landless labourer) borrows from her employer at 5% per month; repays through labour</li>
+        <li><strong>Krishak Cooperative</strong> — a cooperative society operating nearby providing various agricultural and other loans to its 2,300 member farmers</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">3</div><div class="q-txt">Compare the terms of credit for the small farmer (Shyamal), medium farmer (Arun), and landless agricultural worker (Rama) in Sonpur.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>Aspect</th><th>Shyamal (Small farmer)</th><th>Arun (Medium farmer)</th><th>Rama (Landless labourer)</th></tr>
+        <tr><td>Source</td><td>Agricultural trader</td><td>Commercial bank</td><td>Landowner-employer</td></tr>
+        <tr><td>Interest rate</td><td>3% per month (36% p.a.)</td><td>8.5% per annum</td><td>5% per month (60% p.a.)</td></tr>
+        <tr><td>Collateral</td><td>None (must sell crop to trader)</td><td>Documents/land</td><td>None (repays through labour)</td></tr>
+        <tr><td>Other conditions</td><td>Must sell entire crop to trader at low post-harvest price</td><td>Flexible repayment in 3 years</td><td>Must work for landowner</td></tr>
+        <tr><td>Outcome</td><td>Exploitative — trader profits from low crop prices</td><td>Favourable — can plan &amp; grow</td><td>Very exploitative — debt keeps rising</td></tr>
+      </table></div>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">4</div><div class="q-txt">Why will Arun have a higher income from cultivation compared to Shyamal?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <ul>
+        <li><strong>Much lower interest rate:</strong> Arun pays 8.5% per annum vs Shyamal's 36% per annum — saving a huge amount that stays as income.</li>
+        <li><strong>Free to sell crop at the best price:</strong> Arun can store potatoes in cold storage and sell when prices are high. Shyamal is forced to sell immediately at low post-harvest prices to repay the trader.</li>
+        <li><strong>Larger landholding:</strong> Arun has 7 acres vs Shyamal's 1.5 acres — more output and income.</li>
+        <li><strong>Flexible repayment:</strong> Arun can repay the bank loan anytime in 3 years — giving him time to plan and maximise returns.</li>
+        <li><strong>Cold storage advantage:</strong> By storing potatoes and applying for a new bank loan against the cold storage receipt, Arun multiplies his options to earn more.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">5</div><div class="q-txt">Can everyone in Sonpur get credit at a cheap rate? Who are the people who can?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#faece7;color:#711B13">Answer</div>
+      <p><strong>No, not everyone in Sonpur can get credit at a cheap rate.</strong></p>
+      <p>Only those who can provide <strong>collateral and documentation</strong> can access cheap bank loans. In Sonpur, <strong>Arun</strong> (medium farmer with 7 acres of land) is one of the few people who has been able to get a bank loan at 8.5% p.a.</p>
+      <p>The landless poor like Rama and small farmers like Shyamal cannot get cheap bank loans because they lack sufficient assets for collateral and may not have the required documentation. They are forced to borrow from traders (at 36% p.a.) or moneylenders and landlords (at 60% p.a.).</p>
+      <p>Members of Krishak Cooperative can also access relatively cheaper credit — but landless workers may not be members.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#faece7;color:#711B13">6</div><div class="q-txt">Tick the correct: (i) Over the years, Rama's debt will... (ii) Arun is one of the few people to take a bank loan because...</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> (i) Will rise &nbsp;&nbsp; (ii) Banks demand collateral which everyone cannot provide</div>
+      <p><strong>(i) Will rise:</strong> Rama borrows at 5% per month (60% p.a.). She often has to take fresh loans before repaying old ones. With such a high interest rate and irregular income, her debt compounds over time — it will continue to rise.</p>
+      <p><strong>(ii) Banks demand collateral:</strong> Arun has 7 acres of land to offer as collateral, allowing him to get a bank loan. Most other people in Sonpur don't have sufficient land or assets. It is not that they prefer moneylenders or that bank and trader rates are the same — banks clearly offer the cheapest rate (8.5% p.a.).</p>
+    </div></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-message-dots" aria-hidden="true"></i> Let's Work These Out — Formal vs Informal Credit (pg 50)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">1</div><div class="q-txt">What are the differences between formal and informal sources of credit?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>Aspect</th><th>Formal Sector</th><th>Informal Sector</th></tr>
+        <tr><td>Examples</td><td>Banks, cooperatives</td><td>Moneylenders, traders, employers, relatives, friends</td></tr>
+        <tr><td>Interest rate</td><td>Low (8-12% p.a.)</td><td>Very high (36-120% p.a.)</td></tr>
+        <tr><td>Supervision</td><td>Supervised by RBI</td><td>No supervision, no regulation</td></tr>
+        <tr><td>Collateral/Documents</td><td>Required</td><td>Usually not required</td></tr>
+        <tr><td>Records</td><td>Proper written records</td><td>Often no formal records</td></tr>
+        <tr><td>Borrower protection</td><td>Protected by law</td><td>No protection; exploitation possible</td></tr>
+        <tr><td>Fairness</td><td>Cannot use unfair means to recover money</td><td>Can use harassment and coercion</td></tr>
+      </table></div>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">2</div><div class="q-txt">Why should credit at reasonable rates be available for all?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p>Credit at reasonable rates should be available to all because:</p>
+      <ul>
+        <li><strong>Essential for development:</strong> Credit enables farmers to grow crops, businesses to expand, and individuals to invest — all essential for economic development.</li>
+        <li><strong>High-cost credit leads to debt traps:</strong> When interest rates are too high (as with informal lenders), borrowers spend most of their income on repayment, leaving little for growth. It can push people like Swapna into debt traps.</li>
+        <li><strong>Cheap credit = more enterprise:</strong> At low interest rates, more people can afford to start businesses, expand production, and create employment.</li>
+        <li><strong>Reduces inequality:</strong> Currently the rich get cheap formal credit while the poor pay high informal rates — this widens the income gap. Equal access to cheap credit is essential for equitable development.</li>
+        <li><strong>Right of the people:</strong> As the chapter emphasises, access to reasonable credit is a right and its absence keeps large sections outside the development process.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">3</div><div class="q-txt">Should there be a supervisor for informal lenders like RBI? Why would its task be quite difficult?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p><strong>Yes, there should be a supervisor for informal lenders</strong> to protect poor borrowers from exploitation, ensure fair interest rates, and maintain records of transactions.</p>
+      <p><strong>Why the task would be difficult:</strong></p>
+      <ul>
+        <li><strong>Huge numbers:</strong> Informal lenders include millions of moneylenders, traders, employers, and individuals spread across every village and town in India.</li>
+        <li><strong>No formal registration:</strong> Unlike banks, informal lenders are not registered and operate informally — making them hard to identify and track.</li>
+        <li><strong>No paper trails:</strong> Transactions are often verbal with no written records — making supervision and verification nearly impossible.</li>
+        <li><strong>Remote locations:</strong> Many informal lenders operate in rural and tribal areas with poor connectivity, making physical oversight impractical.</li>
+        <li><strong>Resistance:</strong> Lenders and sometimes even borrowers would resist external intervention as they depend on these relationships.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#e6f1fb;color:#0C447C">4</div><div class="q-txt">Why is the share of formal sector credit higher for richer households compared to poorer households?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#e6f1fb;color:#0C447C">Answer</div>
+      <p>Rich households access more formal credit because:</p>
+      <ul>
+        <li><strong>They have collateral:</strong> Rich households own land, buildings, vehicles, and other assets that banks accept as security — the primary requirement for formal loans.</li>
+        <li><strong>They have documentation:</strong> Salary slips, income tax returns, employment records — all required by banks — are readily available with richer households.</li>
+        <li><strong>They have credit history:</strong> Prior banking relationships and timely repayments make banks more willing to lend.</li>
+        <li><strong>They are in urban areas:</strong> Formal bank branches are more accessible in cities where richer households tend to live.</li>
+        <li><strong>They understand the process:</strong> Education and financial literacy help them navigate the banking system.</li>
+      </ul>
+      <p>Poor households lack all of the above — forcing them into expensive informal credit. As a result, 54% of poor urban household loans are from informal sources vs only 17% for rich households.</p>
+    </div></div>
+  </div>
+</div>
+
+<!-- ===================== EXERCISES TAB ===================== -->
+<div id="tab-exercises" class="section">
+  <div class="q-section-title"><i class="ti ti-pencil" aria-hidden="true"></i> NCERT Exercises (pg 52–53)</div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">1</div><div class="q-txt">In situations with high risks, credit might create further problems for the borrower. Explain.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>In high-risk situations, credit can trap borrowers in a debt spiral rather than helping them:</p>
+      <p><strong>Swapna's example:</strong> She borrowed from a moneylender for cultivation. When the crop failed due to pests, she couldn't repay. The debt grew with compounding high interest. The next year, even with a normal crop, earnings were insufficient to cover the old loan. She was forced to sell part of her land to repay — leaving her with less land and less ability to earn in future.</p>
+      <p><strong>Why high-risk situations are dangerous:</strong></p>
+      <ul>
+        <li>The loan must be repaid regardless of whether the activity succeeds — unlike equity investment.</li>
+        <li>With informal lenders charging very high interest (60%+ per year), even a short delay causes the debt to balloon.</li>
+        <li>If the borrower has pledged collateral, failure means losing that asset — potentially their most important productive asset (like land).</li>
+        <li>Once in a debt trap, the borrower must take fresh loans to repay old ones — getting deeper into debt each cycle.</li>
+      </ul>
+      <p>This is why credit in high-risk situations (like rain-dependent farming without insurance) requires careful risk assessment and should ideally be backed by insurance or government support.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">2</div><div class="q-txt">How does money solve the problem of double coincidence of wants? Explain with an example of your own.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>Double coincidence of wants</strong> = a situation in a barter system where what the seller wants to sell is exactly what the buyer wants to buy, AND the buyer has what the seller wants. Both conditions must be satisfied simultaneously.</p>
+      <p><strong>Example:</strong> A potter wants to sell pots and buy rice. In a barter system, she would need to find a rice farmer who not only wants to sell rice but also specifically needs pots. If the rice farmer needs a plough, not pots, no exchange can take place even though both parties want to trade.</p>
+      <p><strong>How money solves this:</strong> With money, the potter sells her pots to anyone who needs them, receives money. She then uses that money to buy rice from any rice seller. The two transactions are now completely independent:</p>
+      <ul>
+        <li>She doesn't need the rice farmer to want pots.</li>
+        <li>The rice farmer doesn't need to want pots to sell rice.</li>
+        <li>Money acts as the universal intermediate — eliminating the need for double coincidence of wants entirely.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">3</div><div class="q-txt">How do banks mediate between those who have surplus money and those who need money?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>Banks act as financial intermediaries in the following way:</p>
+      <ul>
+        <li><strong>Accept deposits:</strong> People with surplus money (depositors) open bank accounts and deposit their extra cash. Banks pay them interest on these deposits — incentivising saving.</li>
+        <li><strong>Maintain cash reserve:</strong> Banks keep only about 5% of deposits as cash for withdrawals by depositors who need money on any given day.</li>
+        <li><strong>Extend loans:</strong> Banks use the major portion (remaining ~95%) of deposits to give loans to borrowers — farmers, businesses, students, home buyers, etc.</li>
+        <li><strong>Charge differential interest:</strong> Banks charge a higher interest rate on loans than they pay to depositors. This difference is their income and incentive to operate.</li>
+      </ul>
+      <p>In this way, banks efficiently channel idle savings from those who have surplus (depositors) to those who need funds for productive activities (borrowers) — enabling economic activity that would not otherwise be possible.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">4</div><div class="q-txt">Look at a 10 rupee note. What is written on top? Can you explain this statement?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>On a ₹10 note, on top is written: <strong>"भारतीय रिज़र्व बैंक / Reserve Bank of India"</strong> and below the central promise is <strong>"मैं धारक को दस रुपये अदा करने का वचन देता हूँ / I promise to pay the bearer the sum of Ten Rupees"</strong> — signed by the Governor of the Reserve Bank of India.</p>
+      <p><strong>Explanation:</strong></p>
+      <ul>
+        <li>This statement reflects that the Reserve Bank of India, on behalf of the Central Government of India, promises to pay the holder of the note the value of ₹10.</li>
+        <li>It is a legal guarantee — the note is legal tender, meaning no one in India can legally refuse it as payment.</li>
+        <li>The RBI is the sole authority to issue currency in India as per Indian law.</li>
+        <li>Modern currency has no intrinsic value — a paper note is not made of gold or silver. But it is accepted because it has the government's authorisation and legal backing.</li>
+        <li>This is why modern currency is called <em>fiat money</em> — it has value because the government declares it to be legal tender.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">5</div><div class="q-txt">Why do we need to expand formal sources of credit in India?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>We need to expand formal sources of credit because:</p>
+      <ul>
+        <li><strong>Formal sector meets only half the rural credit needs:</strong> The remaining credit needs are still met by expensive informal sources. This must change.</li>
+        <li><strong>Lower cost of borrowing:</strong> Formal credit (bank at 8-12% p.a.) is far cheaper than informal credit (moneylenders at 60%+ p.a.). Lower interest means more income stays with the borrower.</li>
+        <li><strong>Prevent debt traps:</strong> High informal interest rates cause debt traps like Swapna's. Cheap formal credit reduces this risk.</li>
+        <li><strong>Enable more productive investment:</strong> Cheap credit allows farmers, small businesses, and entrepreneurs to invest, grow, and create employment.</li>
+        <li><strong>Reduce inequality:</strong> Currently, the rich benefit from cheap formal credit while the poor are stuck with expensive informal credit. Expanding formal credit to the poor promotes equitable development.</li>
+        <li><strong>Supervised and fair:</strong> Formal sector lenders are regulated — they cannot use unfair or illegal means to recover money, protecting borrowers.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">6</div><div class="q-txt">What is the basic idea behind the SHGs for the poor? Explain in your own words.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>The basic idea behind Self-Help Groups (SHGs) is to <strong>organise the rural poor — especially women — into small groups that pool their savings and help each other access credit</strong>, thereby overcoming the main barrier to formal credit: lack of collateral.</p>
+      <p><strong>How it works:</strong></p>
+      <ul>
+        <li>15-20 members from the same neighbourhood form a group and meet regularly.</li>
+        <li>Each member saves a small amount (₹25-100/month) regularly — collectively building a pool of funds.</li>
+        <li>Members can borrow from this pool at reasonable interest rates (less than moneylenders).</li>
+        <li>After 1-2 years of regular saving, the group becomes eligible for a bank loan (sanctioned in the group's name).</li>
+        <li>Decisions about loans — amount, purpose, interest — are made democratically by group members themselves.</li>
+        <li>The group collectively ensures repayment — peer pressure reduces default risk, which is why banks are willing to lend without collateral.</li>
+      </ul>
+      <p><strong>Beyond credit:</strong> SHGs also provide a platform to discuss health, nutrition, and social issues like domestic violence — making them a vehicle for social empowerment, not just financial access.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">7</div><div class="q-txt">What are the reasons why the banks might not be willing to lend to certain borrowers?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <ul>
+        <li><strong>Absence of collateral:</strong> Banks require assets as security. Landless labourers, small farmers, and urban poor often have no acceptable collateral.</li>
+        <li><strong>Lack of documentation:</strong> Banks need income proof, employment records, and identity documents. Many informal workers lack these.</li>
+        <li><strong>No credit history:</strong> First-time borrowers without a banking relationship cannot demonstrate creditworthiness.</li>
+        <li><strong>Low and irregular income:</strong> Banks assess repayment capacity. Borrowers with uncertain or seasonal income (like daily wage workers) are seen as high risk.</li>
+        <li><strong>Small loan amounts:</strong> The cost of processing and monitoring a very small loan can exceed the interest earned — making small loans unprofitable for banks.</li>
+        <li><strong>Remote locations:</strong> Banks are often not present in remote rural areas, making lending impractical even if the borrower is creditworthy.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">8</div><div class="q-txt">In what ways does the Reserve Bank of India supervise the functioning of banks? Why is this necessary?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>Ways RBI supervises banks:</strong></p>
+      <ul>
+        <li><strong>Cash reserve requirement:</strong> RBI monitors that banks maintain a minimum cash balance (about 5% of deposits) to meet withdrawal demands.</li>
+        <li><strong>Priority sector lending:</strong> RBI ensures banks give loans not just to profit-making businesses but also to small farmers, small-scale industries, and small borrowers — promoting equitable development.</li>
+        <li><strong>Periodic reporting:</strong> Banks must periodically submit information to RBI on how much they are lending, to whom, and at what interest rates.</li>
+        <li><strong>Interest rate guidance:</strong> RBI sets benchmark rates (repo rate, etc.) that influence lending rates across the banking system.</li>
+        <li><strong>Regulation of new banks:</strong> RBI issues licences to new banks and can revoke them if banks don't follow rules.</li>
+      </ul>
+      <p><strong>Why this is necessary:</strong></p>
+      <ul>
+        <li>Banks hold the savings of millions of ordinary depositors — without supervision, they could misuse these funds.</li>
+        <li>If a bank fails, millions of depositors could lose their savings — causing economic and social disruption.</li>
+        <li>Without direction, banks might only lend to profitable large borrowers, excluding farmers and the poor who need credit for development.</li>
+        <li>To maintain trust in the banking system and ensure financial stability of the entire economy.</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">9</div><div class="q-txt">Analyse the role of credit for development.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>Credit plays a dual role in development — it can be a powerful enabler or a dangerous trap depending on circumstances:</p>
+      <p><strong>Positive role (when conditions are right):</strong></p>
+      <ul>
+        <li>Salim's case: Credit helped him meet working capital needs, complete production, earn profit, and grow his business.</li>
+        <li>Farmers can buy seeds and fertilisers before the harvest, enabling cultivation.</li>
+        <li>Small businesses can expand, hire workers, and increase output.</li>
+        <li>Cheap and affordable credit is crucial for the country's development — enabling investment in agriculture, industry, and services.</li>
+      </ul>
+      <p><strong>Negative role (in high-risk situations):</strong></p>
+      <ul>
+        <li>Swapna's case: Crop failure + high-interest moneylender = debt trap, loss of land, worse-off than before.</li>
+        <li>High-cost informal credit increases debt burden, reduces income available for families, and can perpetuate poverty.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> The role of credit in development depends on: the interest rate (affordable vs exploitative), the purpose (productive vs consumption in crisis), the risk level, and the presence of support systems like insurance and formal banking access.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">10</div><div class="q-txt">Manav needs a loan to set up a small business. On what basis will he decide whether to borrow from the bank or the moneylender?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p>Manav would decide based on the following factors:</p>
+      <div class="tbl-wrap"><table class="dtbl">
+        <tr><th>Factor</th><th>Bank</th><th>Moneylender</th></tr>
+        <tr><td>Interest rate</td><td>Low (10-15% p.a.) ✓</td><td>Very high (60-120% p.a.) ✗</td></tr>
+        <tr><td>Collateral required</td><td>Yes — Manav needs assets ✗</td><td>Often not required ✓</td></tr>
+        <tr><td>Documents needed</td><td>Yes — business plan, ID, income ✗</td><td>Usually no documents ✓</td></tr>
+        <tr><td>Speed/accessibility</td><td>Slow process ✗</td><td>Quick and accessible ✓</td></tr>
+        <tr><td>Repayment flexibility</td><td>Structured EMIs ✗</td><td>May be more flexible ✓</td></tr>
+        <tr><td>Risk of harassment</td><td>None — legally protected ✓</td><td>High — no legal protection ✗</td></tr>
+      </table></div>
+      <p>If Manav has collateral and documents, he should <strong>clearly choose the bank</strong> — the much lower interest rate will make the business far more profitable and reduce the risk of debt trap. If he lacks collateral, he may be forced to use a moneylender — but should consider SHGs or cooperative societies as a better alternative.</p>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">11</div><div class="q-txt">In India, about 80% of farmers are small farmers who need credit for cultivation. (a) Why might banks be unwilling? (b) Other sources? (c) Example of unfavourable terms? (d) Ways to get cheap credit?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="ans-badge" style="background:#eaf3de;color:#27500A">Answer</div>
+      <p><strong>(a) Why banks might be unwilling to lend to small farmers:</strong></p>
+      <ul>
+        <li>Small farmers have little land or assets to offer as collateral.</li>
+        <li>They often lack formal documentation (income proof, etc.).</li>
+        <li>Their income is seasonal and uncertain — crop failure makes repayment risky.</li>
+        <li>Small loan amounts are not profitable for banks after processing costs.</li>
+      </ul>
+      <p><strong>(b) Other sources small farmers can borrow from:</strong> Moneylenders, agricultural traders, employers/landlords, cooperative societies, relatives and friends, SHGs.</p>
+      <p><strong>(c) Example of unfavourable terms:</strong> Shyamal borrows from a trader at 3% per month (36% p.a.) and must also sell his entire crop to the trader at low post-harvest prices. The trader buys cheap and sells later at higher prices — a double disadvantage for Shyamal.</p>
+      <p><strong>(d) Ways to get cheap credit:</strong></p>
+      <ul>
+        <li>Join a cooperative society — lower rates than informal lenders</li>
+        <li>Form or join a Self-Help Group — collective credit at reasonable rates</li>
+        <li>Kisan Credit Cards from banks — designed for small farmers</li>
+        <li>Government schemes — PM-KISAN, NABARD, regional rural banks with priority sector lending</li>
+        <li>Crop insurance to reduce lender's risk and make small farmers more creditworthy</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">12</div><div class="q-txt">Fill in the blanks: (i) ___ households' credit from informal sources. (ii) ___ costs increase debt-burden. (iii) ___ issues currency on behalf of Central Government. (iv) Banks charge higher interest on loans than on ___. (v) ___ is an asset used as guarantee.</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> Answers</div>
+      <ul>
+        <li>(i) <strong>Poor</strong> households' credit needs are met from informal sources</li>
+        <li>(ii) <strong>High</strong> costs of borrowing increase the debt-burden</li>
+        <li>(iii) <strong>Reserve Bank of India (RBI)</strong> issues currency notes on behalf of the Central Government</li>
+        <li>(iv) Banks charge a higher interest rate on loans than what they offer on <strong>deposits</strong></li>
+        <li>(v) <strong>Collateral</strong> is an asset that the borrower owns and uses as a guarantee until the loan is repaid to the lender</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="qa-card">
+    <div class="qa-question" onclick="toggleQA(this)"><div class="q-num" style="background:#eaf3de;color:#27500A">13</div><div class="q-txt">Choose the most appropriate: (i) In a SHG, decisions are taken by? (ii) Formal sources of credit does not include?</div><i class="ti ti-chevron-down chev" aria-hidden="true"></i></div>
+    <div class="qa-answer"><div class="qa-inner">
+      <div class="mcq-correct"><i class="ti ti-check" aria-hidden="true"></i> Answers</div>
+      <ul>
+        <li>(i) <strong>(b) Members</strong> — In a SHG, most important decisions about savings and loan activities are taken by the group members themselves. The group decides on purpose of loans, amount, interest rate, and repayment schedule democratically.</li>
+        <li>(ii) <strong>(c) Employers</strong> — Formal sources of credit include banks and cooperatives, which are supervised by RBI. Employers lending money are an informal source of credit — unregulated, often at high interest rates.</li>
+      </ul>
+    </div></div>
+  </div>
+</div>
+
+<!-- ===================== DATA & TABLES TAB ===================== -->
+<div id="tab-data" class="section">
+  <div class="q-section-title"><i class="ti ti-table" aria-hidden="true"></i> Key Data from the Chapter</div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Sources of Credit in Rural India, 2019 (Graph 1)</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Source</th><th>% of Rural Credit</th><th>Category</th></tr>
+      <tr><td>Commercial Banks</td><td><strong>51%</strong></td><td>Formal</td></tr>
+      <tr><td>Moneylenders</td><td><strong>23%</strong></td><td>Informal</td></tr>
+      <tr><td>Cooperative Banks and Societies</td><td><strong>10%</strong></td><td>Formal</td></tr>
+      <tr><td>Other Formal Agencies</td><td><strong>5%</strong></td><td>Formal</td></tr>
+      <tr><td>Relatives and Friends</td><td><strong>7%</strong></td><td>Informal</td></tr>
+      <tr><td>Landlords</td><td><strong>1%</strong></td><td>Informal</td></tr>
+      <tr><td>Other Informal Agencies</td><td><strong>3%</strong></td><td>Informal</td></tr>
+    </table></div>
+    <div class="callout">Total formal credit = 51 + 10 + 5 = <strong>66%</strong>. Total informal = 34%. The formal sector provides the majority but moneylenders (23%) still remain the single largest informal source.</div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Formal vs Informal Loans — Urban Households (Graph 2)</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Household Type</th><th>% Formal Loans (blue)</th><th>% Informal Loans (orange)</th></tr>
+      <tr><td>Poor Households</td><td>46%</td><td><strong>54%</strong></td></tr>
+      <tr><td>Households with a few assets</td><td>62%</td><td>38%</td></tr>
+      <tr><td>Well-off Households</td><td>73%</td><td>27%</td></tr>
+      <tr><td>Rich Households</td><td><strong>83%</strong></td><td>17%</td></tr>
+    </table></div>
+    <div class="callout amber">As households become wealthier, their access to formal credit increases. The poorest households depend most on expensive informal credit (54%) while the rich enjoy cheap formal credit (83%). This inequality in credit access widens the income gap.</div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Variety of Credit Arrangements — Sonpur Village</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Borrower</th><th>Source</th><th>Interest Rate</th><th>Collateral / Condition</th></tr>
+      <tr><td>Shyamal (small farmer, 1.5 acres)</td><td>Agricultural trader</td><td>3%/month (36% p.a.)</td><td>Must sell crop to trader at low post-harvest price</td></tr>
+      <tr><td>Arun (medium farmer, 7 acres)</td><td>Commercial bank</td><td>8.5% per annum</td><td>Documents; can store in cold storage; 3-year repayment</td></tr>
+      <tr><td>Rama (landless agricultural labourer)</td><td>Landowner-employer</td><td>5%/month (60% p.a.)</td><td>Must work for landowner; repays through labour</td></tr>
+    </table></div>
+    <div class="callout red">This table shows stark inequality in credit access. Arun (with land) pays the least (8.5% p.a.) while Rama (landless) pays the most (60% p.a.) — clearly illustrating how poverty and lack of collateral traps people in expensive informal credit.</div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Formal vs Informal Sector — Key Comparison</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Aspect</th><th>Formal Sector (Banks/Cooperatives)</th><th>Informal Sector (Moneylenders/Traders)</th></tr>
+      <tr><td>Supervision</td><td>RBI and government</td><td>None</td></tr>
+      <tr><td>Interest rate</td><td>Low (8-15% p.a.)</td><td>High (36-120% p.a.)</td></tr>
+      <tr><td>Collateral</td><td>Required</td><td>Usually not required</td></tr>
+      <tr><td>Documentation</td><td>Required</td><td>Usually not required</td></tr>
+      <tr><td>Record keeping</td><td>Proper records maintained</td><td>Often no records</td></tr>
+      <tr><td>Fair practices</td><td>Must follow law; can't harass</td><td>Can use unfair means; no accountability</td></tr>
+      <tr><td>Who benefits</td><td>Richer, documented borrowers</td><td>Poor without collateral (but at high cost)</td></tr>
+    </table></div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">Megha's Housing Loan — Terms of Credit</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Detail</th><th>Information</th></tr>
+      <tr><td>Loan amount</td><td>₹5,00,000 (Rs 5 lakhs)</td></tr>
+      <tr><td>Duration</td><td>10 years</td></tr>
+      <tr><td>Documents required</td><td>Employment records and salary documents</td></tr>
+      <tr><td>Interest rate</td><td>12% per annum</td></tr>
+      <tr><td>Mode of repayment</td><td>Monthly instalments (EMI)</td></tr>
+      <tr><td>Collateral</td><td>Papers of the new house — returned only after full repayment</td></tr>
+    </table></div>
+    <div class="callout green">Megha's case illustrates how formal bank loans work: documented employment, regular repayment plan, and property as collateral. The bank retains the property documents as security until the loan is fully repaid.</div>
+  </div>
+
+  <div class="concept-card static">
+    <h3 style="font-size:14px;font-weight:500;margin-bottom:12px">SHG — Key Features</h3>
+    <div class="tbl-wrap"><table class="dtbl">
+      <tr><th>Feature</th><th>Details</th></tr>
+      <tr><td>Size</td><td>15-20 members, usually from one neighbourhood</td></tr>
+      <tr><td>Members</td><td>Mainly rural poor women</td></tr>
+      <tr><td>Savings</td><td>₹25 to ₹100 or more per member per month</td></tr>
+      <tr><td>Internal loans</td><td>Members can take small loans from group pool</td></tr>
+      <tr><td>Bank loan eligibility</td><td>After 1-2 years of regular saving; loan in group's name</td></tr>
+      <tr><td>Loan decisions</td><td>Taken by group members collectively</td></tr>
+      <tr><td>Collateral requirement</td><td>No collateral needed from individual members</td></tr>
+      <tr><td>Benefits</td><td>Financial self-reliance + platform for social issues</td></tr>
+    </table></div>
+    <div class="callout">The Grameen Bank of Bangladesh (founded 1970s) is the world's biggest success story of SHG-type lending to the poor. By 2018, it had over 9 million members in 81,600 villages. Almost all borrowers are women from the poorest sections of society.</div>
+  </div>
+</div>
+
+<!-- ===================== KEY TERMS TAB ===================== -->
+<div id="tab-terms" class="section">
+  <div class="q-section-title"><i class="ti ti-bookmark" aria-hidden="true"></i> Important Terms to Know</div>
+  <div class="terms-grid">
+    <div class="term-card"><h4>Double Coincidence of Wants</h4><p>In barter, when what a seller wants to sell is exactly what the buyer wants to buy, AND the buyer has what the seller needs simultaneously. Very hard to arrange.</p></div>
+    <div class="term-card"><h4>Medium of Exchange</h4><p>Money's key role — acts as an intermediate step in transactions, separating the act of selling from buying and eliminating double coincidence of wants.</p></div>
+    <div class="term-card"><h4>Currency</h4><p>Paper notes and coins that constitute modern money. Issued by RBI in India on behalf of the Central Government. No intrinsic value but legally mandated.</p></div>
+    <div class="term-card"><h4>Demand Deposits</h4><p>Bank deposits that can be withdrawn on demand at any time. Along with currency, they constitute money in the modern economy. Enable cheque payments.</p></div>
+    <div class="term-card"><h4>Cheque</h4><p>A paper instructing the bank to pay a specific amount from the payer's account to the person named. Allows cashless payment from demand deposits.</p></div>
+    <div class="term-card"><h4>Credit (Loan)</h4><p>An agreement where the lender supplies the borrower with money, goods, or services in return for the promise of future payment with interest.</p></div>
+    <div class="term-card"><h4>Collateral</h4><p>An asset owned by the borrower (land, building, vehicle, livestock, bank deposits) pledged as guarantee for a loan. Lender can sell it if loan is not repaid.</p></div>
+    <div class="term-card"><h4>Terms of Credit</h4><p>The conditions of a loan: interest rate + collateral and documentation requirements + mode of repayment. Vary significantly between formal and informal lenders.</p></div>
+    <div class="term-card"><h4>Debt Trap</h4><p>When a borrower cannot repay a loan and must borrow more to repay the old loan, getting progressively deeper into debt. Swapna's case is the classic example.</p></div>
+    <div class="term-card"><h4>Formal Sector Credit</h4><p>Loans from banks and cooperatives — supervised by RBI, lower interest rates, require collateral and documentation. Accessible mainly to those with assets.</p></div>
+    <div class="term-card"><h4>Informal Sector Credit</h4><p>Loans from moneylenders, traders, employers, relatives — no supervision, very high interest rates (up to 60%+ p.a.), no collateral needed but no legal protection.</p></div>
+    <div class="term-card"><h4>Reserve Bank of India (RBI)</h4><p>India's central bank. Issues currency on behalf of the government. Supervises formal credit — monitors cash balance, priority sector lending, and interest rates.</p></div>
+    <div class="term-card"><h4>Self-Help Group (SHG)</h4><p>15-20 rural poor (mainly women) pool savings monthly, lend to members at reasonable rates, and after 1-2 years access bank loans as a group without individual collateral.</p></div>
+    <div class="term-card"><h4>Grameen Bank</h4><p>Bangladesh's pioneering microfinance institution (founded 1970s). Over 9 million mostly-women members in 81,600 villages by 2018. Proves poor women are reliable borrowers.</p></div>
+    <div class="term-card"><h4>Cooperative Society (Credit)</h4><p>Members pool resources; deposits are used as collateral to get bank loans; loans given to members for agriculture, housing, and other needs at reasonable rates.</p></div>
+  </div>
+
+  <div class="q-section-title"><i class="ti ti-star" aria-hidden="true"></i> Important Facts for Exams</div>
+  <ul class="facts-wrap">
+    <li>In India, currency notes are issued by the <strong>Reserve Bank of India (RBI)</strong> on behalf of the Central Government. No other individual or organisation can issue currency.</li>
+    <li>Banks in India hold about <strong>5% of their deposits as cash</strong> and use the rest to extend loans.</li>
+    <li>Banks make money by charging a <strong>higher interest rate on loans</strong> than they pay on deposits — the difference is their main income.</li>
+    <li>As of 2019 (NSSO survey), <strong>commercial banks provide 51%</strong> of rural credit. Moneylenders provide 23%.</li>
+    <li><strong>54% of poor urban households'</strong> loans are from informal sources vs only <strong>17% for rich households</strong> (Graph 2).</li>
+    <li>A typical SHG has <strong>15-20 members</strong>, usually from the same neighbourhood, saving ₹25-100/month each.</li>
+    <li><strong>Grameen Bank</strong> was founded in the 1970s by Professor Muhammad Yunus (2006 Nobel Peace Prize winner) in Bangladesh. By 2018: 9 million+ members in 81,600 villages.</li>
+    <li><strong>Salim</strong> = positive credit story (working capital → delivered order → repaid). <strong>Swapna</strong> = negative credit story (crop failure → debt trap → sold land).</li>
+    <li><strong>Collateral</strong> is the key requirement for formal sector loans. Its absence is why the poor cannot access cheap bank credit.</li>
+    <li>SHGs overcome the collateral problem — <strong>banks lend to the group</strong>, the group's collective responsibility replaces individual collateral.</li>
+    <li>Arun (Sonpur, 7 acres) borrows from bank at <strong>8.5% p.a.</strong> Shyamal (1.5 acres) pays 36% p.a. to trader. Rama (landless) pays <strong>60% p.a.</strong> to employer.</li>
+    <li>RBI supervises formal lending — monitors <strong>cash balance, priority sector lending</strong>, and periodic reporting by all banks.</li>
+  </ul>
+</div>
+
+</div><!-- end wrap -->
+
+<script>
+function switchTab(name, btn) {
+  document.querySelectorAll('.section').forEach(function(s){ s.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+function toggleC(card) {
+  if (card.classList.contains('static')) return;
+  var body = card.querySelector('.c-body');
+  var chev = card.querySelector('.chev');
+  if (body) body.classList.toggle('open');
+  if (chev) chev.classList.toggle('open');
+}
+function toggleQA(header) {
+  var answer = header.nextElementSibling;
+  var chev = header.querySelector('.chev');
+  if (answer) answer.classList.toggle('open');
+  if (chev) chev.classList.toggle('open');
+}
+
+var lessons = [
+  {
+    num:"01", color:"#E6F1FB", numColor:"#0C447C",
+    title:"Money as a medium of exchange",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Welcome to Chapter 3 — Money and Credit! This chapter answers some fascinating everyday questions: Why do we use money? Why not just exchange goods directly? How does banking work? And who gets credit — and at what cost?<br><br>Let's start with the very first function of money.</div></div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Imagine a world without money. You're a shoe manufacturer. You want to sell shoes and buy wheat. In a barter system, you'd need to find a wheat farmer who ALSO wants shoes. What if the wheat farmer needs clothes, not shoes? No deal!<br><br>This problem is called <b>double coincidence of wants</b> — both parties must want exactly what the other has.</div></div>
+    <div class="callout"><b>Double coincidence of wants</b> = What person A wants to sell is exactly what person B wants to buy, AND what B wants to sell is exactly what A wants to buy. In barter, both conditions must be met simultaneously — very hard to arrange!</div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Money solves this brilliantly! The shoe manufacturer:<br>Step 1: Sells shoes to anyone who wants them → receives money<br>Step 2: Uses that money to buy wheat from any wheat seller<br><br>Money acts as a <b>medium of exchange</b> — a universal intermediate step. Everyone prefers to receive money because they can exchange it for anything they want.</div></div>
+    <div class="eg-grid">
+      <div class="eg-card"><div class="eg-who">Before coins (very old times)</div><div class="eg-want">Grains and cattle were used as money in India</div></div>
+      <div class="eg-card"><div class="eg-who">Metallic coins</div><div class="eg-want">Gold, silver, copper coins — continued till last century</div></div>
+      <div class="eg-card"><div class="eg-who">Modern currency</div><div class="eg-want">Paper notes and coins issued by RBI — no intrinsic value but legally mandated</div></div>
+      <div class="eg-card"><div class="eg-who">Demand deposits</div><div class="eg-want">Bank deposits withdrawable on demand; cheques allow cashless payment</div></div>
+    </div>
+    <div class="callout green">Modern currency is accepted because <b>it is authorised by the government</b>. The RBI issues currency on behalf of the Central Government. No one in India can legally refuse a payment in rupees.</div>`,
+    questions:[
+      {q:"What is 'double coincidence of wants'?",opts:["When two people want the same thing","In barter, when what A wants to sell is exactly what B wants to buy AND vice versa — both conditions simultaneously","When money is exchanged for goods","When two banks give loans to the same person"],ans:1,fb:"Correct! Double coincidence of wants is the core problem of barter. Both parties must want exactly what the other has — AND be willing to give what the other wants. For example, a shoe manufacturer needs to find a wheat farmer who both wants shoes AND has wheat to sell. Money eliminates this problem entirely."},
+      {q:"Why is modern currency (paper notes) accepted as a medium of exchange even though it has no intrinsic value?",opts:["Because it is made of special paper","Because it is authorised by the government of the country — it is legal tender","Because banks print it","Because people have always used paper money"],ans:1,fb:"Right! Modern currency has no intrinsic value — it is not made of gold or silver. But it is accepted because the government (through the Reserve Bank of India) authorises it and the law makes it legal tender. No one in India can legally refuse a payment made in rupees."}
+    ]
+  },
+  {
+    num:"02", color:"#EAF3DE", numColor:"#27500A",
+    title:"Banks, deposits, and loan activities",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Now that we understand money, let's understand <b>how banks work</b>. Banks are fascinating — they take money from people who have extra and lend it to people who need it.</div></div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble"><b>Step 1 — Deposits:</b> People with extra cash (like workers with their monthly salary) deposit it in bank accounts. Banks pay <b>interest</b> on these deposits — so the money grows safely.<br><br>These are called <b>demand deposits</b> because they can be withdrawn whenever needed.</div></div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble"><b>Step 2 — The clever mechanism:</b> Banks keep only about <b>5% of deposits as cash</b> (for daily withdrawals). The remaining <b>95% is given out as loans</b>!<br><br>This works because all depositors don't withdraw on the same day — so 5% is enough.</div></div>
+    <div class="callout"><b>How banks earn money:</b> Banks charge a <b>higher interest rate on loans</b> (say 10%) than they pay on deposits (say 4%). The difference (6%) is their main source of income.</div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble"><b>Demand deposits also function as money!</b> The facility of cheques allows payments without cash. When M. Salim writes a cheque to pay his leather supplier Prem, money moves from Salim's account to Prem's account — no cash changes hands. The transaction is complete!</div></div>
+    <div class="callout green">The <b>Reserve Bank of India (RBI)</b> supervises all banks — ensuring they maintain cash balances, lend to priority sectors (small farmers, small businesses), and report periodically. Without RBI supervision, banks could misuse depositors' funds.</div>`,
+    questions:[
+      {q:"Why do banks keep only about 5% of their deposits as cash and lend out the rest?",opts:["Because the government orders them to keep only 5%","Because on any given day only some depositors come to withdraw, so 5% is enough to meet daily demand","Because the rest of the money is used for bank salaries","Because 5% earns the most interest"],ans:1,fb:"Correct! Banks know from experience that not all depositors withdraw money on the same day. Only a small fraction comes to withdraw at any given time. So keeping 5% cash is sufficient to meet daily withdrawal demands, while the remaining 95% can be profitably lent out as loans."},
+      {q:"What is the main source of income for banks?",opts:["Fees charged for opening accounts","The interest on the currency notes they print","The difference between the higher interest charged on loans and the lower interest paid on deposits","Profits from investing in the stock market"],ans:2,fb:"Right! Banks charge a higher interest rate on loans than they pay on deposits. For example, if they pay 4% on deposits and charge 10% on loans, the 6% difference is their income. This is why banks are eager to attract deposits (to lend out) and why they want borrowers to repay — both sides of this equation are essential to their business."}
+    ]
+  },
+  {
+    num:"03", color:"#FAEEDA", numColor:"#633806",
+    title:"Two credit situations — Salim and Swapna",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Credit means borrowing — getting money, goods, or services now with a promise to pay later. But credit can work very differently depending on the situation. Let's compare two vivid examples from the chapter.</div></div>
+    <div class="two-col">
+      <div class="story-box" style="border:.5px solid #3B6D11"><div class="sb-title" style="color:#27500A">✅ Salim — Positive Credit</div>Gets a big order (3,000 pairs of shoes) → borrows to buy leather + hire workers → completes order on time → delivers → earns profit → repays loan. Credit <b>increased his earnings</b>.</div>
+      <div class="story-box" style="border:.5px solid #A32D2D"><div class="sb-title" style="color:#791F1F">❌ Swapna — Debt Trap</div>Borrows from moneylender for groundnut cultivation → crop fails due to pests → can't repay → debt grows with high interest → next year's crop barely covers costs → forced to sell land. Credit made her <b>worse off</b>.</div>
+    </div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">What made the difference? <b>Risk!</b> Salim's risk was low — he had an order in hand and a reliable product. Swapna's risk was high — farming depends on rain, pests, and nature. Without insurance or support, any crop failure leads straight to a debt trap.</div></div>
+    <div class="callout amber"><b>Terms of Credit</b> = Interest rate + Collateral (security) + Documentation + Mode of repayment<br><br>Collateral = An asset pledged by the borrower as guarantee (land, building, livestock, bank deposits). If loan is not repaid, the lender can sell the collateral.</div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Borrowers always want: <b>low interest, easy repayment, less collateral</b>. Lenders always want the opposite — higher interest, strict repayment, more collateral. The terms of credit reflect the power balance between lender and borrower.</div></div>`,
+    questions:[
+      {q:"Credit 'pushes the borrower into a situation from which recovery is very painful' — this is called:",opts:["Credit trap","Loan burden","Debt trap","Interest cycle"],ans:2,fb:"Correct! A debt trap is when credit makes the borrower worse off rather than better off. Swapna's case is the perfect example — the crop failed, she couldn't repay the high-interest moneylender loan, the debt grew, she borrowed again the next year, still couldn't cover the old loan, and finally had to sell part of her land. Credit was destructive for her."},
+      {q:"What is collateral?",opts:["The interest rate on a loan","An asset that the borrower owns and pledges as guarantee to the lender until the loan is repaid","The documentation required for a loan","The repayment schedule"],ans:1,fb:"Right! Collateral is an asset (land, building, vehicle, livestock, bank deposits) that the borrower pledges as security for a loan. If the borrower fails to repay, the lender has the right to sell this asset to recover the loan amount. Absence of collateral is the main reason the poor cannot access formal bank loans."}
+    ]
+  },
+  {
+    num:"04", color:"#FAECE7", numColor:"#711B13",
+    title:"Formal and informal credit sources",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">People borrow from many different sources. These can be grouped into two categories — <b>formal</b> (supervised, cheaper) and <b>informal</b> (unsupervised, expensive).</div></div>
+    <div class="eg-grid">
+      <div class="eg-card"><div class="eg-who">Formal Sector</div><div class="eg-want">Banks and cooperative societies. Supervised by RBI. Interest rates: 8-15% p.a. Require collateral and documents.</div></div>
+      <div class="eg-card"><div class="eg-who">Informal Sector</div><div class="eg-want">Moneylenders, traders, employers, relatives. No supervision. Interest rates: 36-120% p.a. No collateral but no legal protection.</div></div>
+    </div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">Look at the Sonpur village example: Arun (7 acres of land) gets a bank loan at <b>8.5% p.a.</b> Shyamal (1.5 acres) borrows from a trader at <b>3%/month = 36% p.a.</b> Rama (landless) borrows from her employer at <b>5%/month = 60% p.a.</b><br><br>The less you have, the more you pay. This is deeply unfair.</div></div>
+    <div class="callout red">As of 2019: <b>54% of poor households'</b> loans are from informal sources vs only <b>17% for rich households</b>. The rich get cheap formal credit; the poor pay expensive informal rates. This widens inequality.</div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">The <b>RBI supervises formal lenders</b> — banks must maintain cash balance, lend to priority sectors, and report periodically. There is NO organisation supervising informal lenders. They can charge any rate, keep no records, and use unfair means to recover money.</div></div>`,
+    questions:[
+      {q:"Which of these is a formal source of credit?",opts:["Moneylender","Agricultural trader","Employer-landowner","Cooperative society"],ans:3,fb:"Correct! Cooperative societies are a formal source of credit — supervised and regulated. Banks are also formal. Moneylenders, agricultural traders, and employer-landlords are all informal sources — unregulated, high interest rates, no legal protection for borrowers."},
+      {q:"Why do poor households depend more on informal credit despite its high cost?",opts:["They prefer moneylenders personally","Moneylenders offer lower interest rates","Banks require collateral and documentation which the poor lack","The government has banned the poor from using banks"],ans:2,fb:"Exactly right! The poor cannot access cheap formal bank loans mainly because they lack collateral (assets to pledge as security) and proper documentation (income proof, employment records). Banks will not lend without these requirements. So the poor are forced to turn to informal lenders (moneylenders, traders, employers) who don't require collateral but charge extremely high interest rates — creating a poverty trap."}
+    ]
+  },
+  {
+    num:"05", color:"#EEEDFE", numColor:"#3C3489",
+    title:"Self-Help Groups (SHGs) for the poor",
+    content:`<div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">We know the problem: the poor can't get bank loans because they have no collateral. What's the solution? <b>Self-Help Groups (SHGs)</b> — a brilliant innovation that uses collective strength to overcome individual weakness.</div></div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble"><b>How SHGs work:</b><br>• 15-20 women from the same neighbourhood form a group<br>• Each saves ₹25 to ₹100 every month<br>• Members can borrow from this pool at reasonable interest<br>• After 1-2 years of regular saving, the group can get a bank loan (in the group's name)<br>• The GROUP decides all loan decisions — purpose, amount, interest, repayment<br>• The GROUP is collectively responsible for repayment</div></div>
+    <div class="callout green"><b>Why banks lend to SHGs even without individual collateral:</b> The entire group is responsible for repayment. If one member doesn't repay, all other members follow up seriously. This peer pressure and collective responsibility dramatically reduces the risk of default — making SHGs creditworthy even without collateral!</div>
+    <div class="t-bubble"><div class="t-icon"><i class="ti ti-school"></i></div><div class="bubble">SHGs are used for: releasing mortgaged land, buying seeds and fertilisers, raw materials (bamboo, cloth), housing materials, sewing machines, handlooms, cattle — and many more income-generating purposes.<br><br>Beyond money, SHGs also give women a platform to discuss <b>health, nutrition, and domestic violence</b> — making them powerful vehicles for social empowerment.</div></div>
+    <div class="callout"><b>Grameen Bank, Bangladesh:</b> The world's greatest SHG/microfinance success story. Started in the 1970s by Prof. Muhammad Yunus (2006 Nobel Peace Prize). By 2018: 9 million+ members in 81,600 villages — almost all poor women. Proved that poor women are the most reliable borrowers!</div>`,
+    questions:[
+      {q:"How do SHGs help the poor overcome the problem of lack of collateral for bank loans?",opts:["SHGs provide gold as collateral to banks","The government provides guarantees for SHG loans","The bank loan is given to the group as a whole, and the group's collective responsibility replaces individual collateral","SHG members pool their land titles as collateral"],ans:2,fb:"Correct! This is the ingenious solution SHGs offer. Because the loan is given to the group rather than to an individual, and because all group members are collectively responsible for repayment, banks feel secure lending without individual collateral. The peer pressure within the group — every member ensuring the others repay — creates an effective social guarantee that substitutes for physical collateral."},
+      {q:"Besides financial benefits, what other important role do SHG meetings play?",opts:["They help members find government jobs","They provide a platform to discuss and act on social issues like health, nutrition, and domestic violence","They train members as bank employees","They help members vote in elections"],ans:1,fb:"Right! SHG meetings serve as a powerful platform beyond finance. Women who might otherwise be isolated in their homes come together regularly, build solidarity, and discuss important social issues like health, nutrition, education of children, and domestic violence. SHGs are thus described as 'building blocks of organisation of the rural poor' — they create social capital alongside financial capital."}
+    ]
+  }
+];
+
+var current = 0;
+var quizState = {};
+var scores = {};
+
+function totalAnswered(){ return Object.keys(quizState).length; }
+function totalCorrect(){ return Object.values(scores).reduce(function(a,b){return a+b;},0); }
+
+function renderClass() {
+  var app = document.getElementById('cls-app');
+  if (!app) return;
+  if (current >= lessons.length) { app.innerHTML = finalScreen(); return; }
+  var l = lessons[current];
+  var qs = l.questions;
+  var quizHtml = '';
+  qs.forEach(function(q, qi) {
+    var key = current + '-' + qi;
+    var sel = quizState[key];
+    var optsHtml = q.opts.map(function(o, oi) {
+      var cls = 'opt-btn';
+      if (sel !== undefined) {
+        if (oi === q.ans) cls += ' correct';
+        else if (oi === sel && sel !== q.ans) cls += ' wrong';
+      }
+      return '<button class="' + cls + '" ' + (sel !== undefined ? 'disabled' : '') + ' onclick="pick(' + current + ',' + qi + ',' + oi + ')">' +
+        '<span class="opt-letter">' + String.fromCharCode(65 + oi) + '</span>' + o + '</button>';
+    }).join('');
+    var fbCls = 'feedback';
+    var fbContent = '';
+    if (sel !== undefined) {
+      fbCls += ' show ' + (sel === q.ans ? 'good' : 'bad');
+      fbContent = (sel === q.ans
+        ? '<i class="ti ti-circle-check" style="font-size:15px;vertical-align:-2px;margin-right:5px"></i>'
+        : '<i class="ti ti-circle-x" style="font-size:15px;vertical-align:-2px;margin-right:5px"></i>') + q.fb;
+    }
+    quizHtml += '<div class="q-block"><div class="q-text">' + (qi+1) + '. ' + q.q + '</div><div class="options">' + optsHtml + '</div><div class="' + fbCls + '">' + fbContent + '</div></div>';
+  });
+  var allAnswered = qs.every(function(_,qi){ return quizState[current+'-'+qi] !== undefined; });
+  var dots = lessons.map(function(_,i){ return '<div class="dot ' + (i < current ? 'done' : i === current ? 'active' : '') + '"></div>'; }).join('');
+  app.innerHTML =
+    '<div class="topbar"><div class="topbar-left"><div class="t-avatar"><i class="ti ti-school"></i></div><div><div class="topbar-title">Chapter 3 — Money and Credit</div><div class="topbar-sub">Class 10 Economics · NCERT 2026-27</div></div></div>' +
+    '<div class="prog-row"><div class="prog-dots">' + dots + '</div><div class="prog-label">Lesson ' + (current+1) + ' of ' + lessons.length + '</div></div></div>' +
+    '<div class="card"><div class="card-head"><span class="lnum" style="background:' + l.color + ';color:' + l.numColor + '">' + l.num + '</span><span class="card-title">' + l.title + '</span></div>' +
+    '<div class="card-body">' + l.content + '</div>' +
+    '<div class="quiz-section"><div class="quiz-label"><i class="ti ti-pencil" style="font-size:14px"></i> Check your understanding</div>' + quizHtml + '</div>' +
+    '<div class="nav-row">' +
+    '<button class="nav-btn" onclick="goLesson(-1)" ' + (current===0?'disabled':'') + '><i class="ti ti-arrow-left"></i> Previous</button>' +
+    '<span class="score-badge">Score: ' + totalCorrect() + ' / ' + totalAnswered() + '</span>' +
+    '<button class="nav-btn primary" onclick="goLesson(1)" ' + (!allAnswered?'disabled':'') + '>' + (current===lessons.length-1?'Finish class':'Next lesson') + ' <i class="ti ti-arrow-right"></i></button>' +
+    '</div></div>';
+}
+
+function finalScreen() {
+  var tot = lessons.reduce(function(a,l){ return a + l.questions.length; }, 0);
+  var cor = totalCorrect();
+  var pct = Math.round((cor/tot)*100);
+  var msg = pct >= 90 ? "Outstanding! You've mastered Chapter 3 completely." :
+            pct >= 75 ? "Excellent work! You have a strong grasp of Money and Credit." :
+            pct >= 60 ? "Good effort! Review lessons where you got answers wrong." :
+            "Keep revising! Go back through each lesson carefully.";
+  var emoji = pct >= 75 ? "🎉" : pct >= 60 ? "👍" : "📖";
+  return '<div class="topbar"><div class="topbar-left"><div class="t-avatar"><i class="ti ti-school"></i></div><div><div class="topbar-title">Chapter 3 — Money and Credit</div><div class="topbar-sub">Class complete!</div></div></div></div>' +
+    '<div class="final-card"><div style="font-size:36px;margin-bottom:.5rem">' + emoji + '</div>' +
+    '<div class="score-ring"><div class="sr-num">' + cor + '/' + tot + '</div><div class="sr-sub">correct</div></div>' +
+    '<h2>Class complete!</h2><p>' + msg + '<br><br><strong>Topics covered:</strong> Money as medium of exchange · Banks &amp; loan activities · Credit situations (Salim &amp; Swapna) · Formal vs Informal credit · Self-Help Groups · Grameen Bank</p>' +
+    '<button class="restart-btn" onclick="restartClass()"><i class="ti ti-refresh"></i> Restart class</button></div>';
+}
+
+function pick(lessonIdx, qi, oi) {
+  var key = lessonIdx + '-' + qi;
+  if (quizState[key] !== undefined) return;
+  quizState[key] = oi;
+  if (oi === lessons[lessonIdx].questions[qi].ans) scores[key] = 1;
+  renderClass();
+}
+
+function goLesson(dir) {
+  current = Math.max(0, Math.min(lessons.length, current + dir));
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  renderClass();
+}
+
+function restartClass() {
+  current = 0; quizState = {}; scores = {};
+  renderClass();
+}
+
+renderClass();
+</script>
+</body>
+</html>
